@@ -15,11 +15,11 @@
 ## Descrição
 
 <p align="center">
-<img src="C:\Users\fabri\OneDrive\Documentos\GitHub\Projeto1\src\Frontend\img\logo.png" alt="Logo do projeto" border="0">
+<img src="https://live.staticflickr.com/65535/53630676904_c8c40f521e_b.jpg" width="1024" height="806" alt="Logo do projeto"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
 </p>
 
 
-Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário - Fundação Escola de Comércio Álvares Penteado (FECAP), tendo como objetivo ajudar você de forma rápida e segura a criar ou ampliar o hábito de ajudar o próximo, por meio de ONG’s, que por sua vez, já fazem um trabalho de acolhimento a pessoas, animais e demais necessidades.
+Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário - Fundação Escola de Comércio Álvares Penteado (FECAP), tendo como objetivo ajudar de forma rápida e segura a criar ou ampliar o hábito de ajudar o próximo, por meio de causas, projetos e ONG’s, que por sua vez, já fazem um trabalho de acolhimento a pessoas, animais e demais necessidades.
 
 
 ## 🛠 Estrutura de pastas
