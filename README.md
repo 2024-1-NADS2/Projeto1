@@ -15,7 +15,7 @@
 ## Descrição
 
 <p align="center">
-<img src="https://live.staticflickr.com/65535/53630676904_c8c40f521e_b.jpg" width="1024" height="806" alt="Logo do projeto"/></a>
+<img src="https://live.staticflickr.com/65535/53630676904_c8c40f521e_b.jpg" alt="Logo do projeto"/></a>
 </p>
 
 
