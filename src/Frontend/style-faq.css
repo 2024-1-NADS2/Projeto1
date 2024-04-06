@@ -46,7 +46,7 @@ body
     align-items: center;
     list-style: none;
     margin: 0;
-    font-size: 18px;
+    font-size: 15px;
 }
 .menu-items li{margin-left: 15px}
 
@@ -84,6 +84,25 @@ body
     width: 150px;
     height: 35px;
     font-weight: bold
+}
+.main-container h1 {
+    text-align: center;       /* Alinhar o texto ao centro */
+    margin-top: 50px;         /* Espaçamento superior */
+    margin-bottom: 60px;
+    border-radius: 10px;      /* Borda arredondada */
+}
+
+.main-container h2 
+{
+ 
+}
+
+.main-container p{
+    text-align: left;       /* Alinhar o texto ao centro */
+    margin-bottom: 50px;
+    border-radius: 10px;      /* Borda arredondada */
+    width: 60%;
+    
 }
 
 /* Configurações do footer */
@@ -138,3 +157,13 @@ footer ul li
     display: flex;
     margin: var(--gap);
 }
+
+.row
+{
+    padding: var(--pading);
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.row p{text-align: justify;}
