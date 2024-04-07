@@ -85,6 +85,10 @@ body
     height: 35px;
     font-weight: bold
 }
+/* Cofigurações do main */
+
+
+
 .main-container h1 {
     text-align: center;       /* Alinhar o texto ao centro */
     margin-top: 50px;         /* Espaçamento superior */
@@ -151,19 +155,3 @@ footer ul li
     padding-bottom: 5px;
 }
 
-/* Cofigurações do main */
-.main-container
-{
-    display: flex;
-    margin: var(--gap);
-}
-
-.row
-{
-    padding: var(--pading);
-    align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.row p{text-align: justify;}
