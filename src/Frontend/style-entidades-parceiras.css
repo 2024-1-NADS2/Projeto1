@@ -1,80 +1,82 @@
-*{
+* {
     list-style-type: none;
 }
 
 /* Variáveis do projeto */
-:root
-{
-    --radius:5px;
-    --pading:7px;
-    --gap:5px;
-    --bg-color-menu:#198754;
-    --fonte:Arial, Helvetica, sans-serif;   
-    --tamanho-fonte-texto:12px;
-    --tamanho-fonte-titulo:14px;
-    --tamanho-fonte-menu:18px;
-    --cor-fonte-menu:#333;
-    --cor-fonte-conteudo:#FFFFFF;
+:root {
+    --radius: 5px;
+    --pading: 7px;
+    --gap: 5px;
+    --bg-color-menu: #198754;
+    --fonte: Arial, Helvetica, sans-serif;
+    --tamanho-fonte-texto: 12px;
+    --tamanho-fonte-titulo: 14px;
+    --tamanho-fonte-menu: 18px;
+    --cor-fonte-menu: #333;
+    --cor-fonte-conteudo: #FFFFFF;
     --opacidade: ;
 }
 
-body
-{
+body {
     margin: 0;
     font-family: var(--fonte);
 }
 
-.container
-{
+.container {
     display: flex;
     flex-direction: column;
     height: 100vh;
-}   
+}
 
 
 /* Configurações do menu */
-.menu
-{
+.menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.menu-items
-{
+.menu-items {
     display: flex;
     align-items: center;
     list-style: none;
     margin: 0;
     font-size: 18px;
 }
-.menu-items li{margin-left: 15px}
 
-.menu-items li:first-child
-{
+.menu-items li {
+    margin-left: 15px
+}
+
+.menu-items li:first-child {
     margin-left: 20px;
 }
-.menu-items li a
-{
+
+.menu-items li a {
     text-decoration: none;
     color: var(--cor-fonte-menu);
 }
-.menu li::before 
-{
-    content: "| "; /* Insere o "|" e um espaço antes */
-    display: inline-block; /* Torna o elemento inline */
-    margin-right: 10px; /* Adiciona espaço à direita */
+
+.menu li::before {
+    content: "| ";
+    /* Insere o "|" e um espaço antes */
+    display: inline-block;
+    /* Torna o elemento inline */
+    margin-right: 10px;
+    /* Adiciona espaço à direita */
 }
+
 .menu li:first-child::before {
-    content: ""; /* Remove o "|" do primeiro item */
-  }
-.menu-items li a:hover
-{
+    content: "";
+    /* Remove o "|" do primeiro item */
+}
+
+.menu-items li a:hover {
     text-decoration: underline;
     font-weight: bold;
 }
-.botao-doacao-index button
-{
+
+.botao-doacao-index button {
     margin-right: 15px;
     padding: 5px 10px;
     background-color: crimson;
@@ -87,54 +89,112 @@ body
 }
 
 /* Configurações do footer */
-footer
-{
+footer {
     color: var(--cor-fonte-conteudo);
     background-color: var(--bg-color-menu);
     border-radius: 0;
     padding: var(--pading);
 }
-.container-footer
-{
+
+.container-footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.footer-section
-{
+
+.footer-section {
     flex: 1;
     max-width: 30%;
     text-align: left;
 }
-.footer-bottom
-{
+
+.footer-bottom {
     margin: 0;
     vertical-align: baseline;
     text-align: center;
     font-size: 10px;
 }
-.footer-section strong
-{
+
+.footer-section strong {
     text-align: center;
 }
-.footer-section li a
-{
+
+.footer-section li a {
     text-decoration: none;
     color: #f2f2f2;
     text-align: center;
 }
-.footer-section li a:hover
-{
+
+.footer-section li a:hover {
     font-weight: bold
 }
-footer ul li
-{
+
+footer ul li {
     padding-bottom: 5px;
 }
 
 /* Cofigurações do main */
-.main-container
-{
+.main-container {
     display: flex;
     margin: var(--gap);
+    justify-content: center;
+
+}
+
+main {
+    margin-top: 20px;
+}
+
+
+
+.HistoriaOng h1 {
+    text-align: center;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.HistoriaOng section p {
+    margin-top: 10px;
+    font-size: 14px;
+    flex-direction: row;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+
+}
+
+.HistoriaOng {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carousel-inner {
+    width: 1000px;
+    height: 350px;
+    margin-top: 20px;
+
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: 350px;
+    text-align: center;
+
+
+}
+
+.carouselExampleDark {
+    max-width: 1000px;
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+
+}
+
+article p {
+    text-align: center;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
 }
