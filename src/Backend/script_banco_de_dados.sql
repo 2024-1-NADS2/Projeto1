@@ -10,7 +10,8 @@ CREATE TABLE usuarios(
     nome VARCHAR(100) NOT NULL,
     senha VARCHAR(12) NOT NULL,
     email VARCHAR(100) NOT NULL,
-    telefone VARCHAR(18)
+    telefone VARCHAR(18),
+    tipo_pessoa VARCHAR(2)
 );
 
 CREATE TABLE cupons(
