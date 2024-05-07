@@ -7,6 +7,7 @@ import PontosColeta from './pages/PontosColeta';
 import EntidadeParceira from './pages/EntidadeParceira';
 import ComoFunciona from './pages/ComoFunciona';
 import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
 import GlobalStyles from './styles/GlobalStyle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import VLibras from 'vlibras-nextjs';
@@ -24,6 +25,7 @@ function App() {
         <Route path="/comofunciona" element = {<ComoFunciona />}/>
         <Route path="/entidadeparceira" element = {<EntidadeParceira />}/>
         <Route path="/login" element = {<Login />}/>
+        <Route path="/cadastro" element = {<Cadastro />}/>
       </Routes>
       <VLibras forceOnload />
     </Router>   
