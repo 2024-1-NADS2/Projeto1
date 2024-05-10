@@ -13,26 +13,34 @@ const Texto = styled.p`
 `
 
 const Titulo = styled.h1`
-
+  
 `
 
 const Foto = styled.img`
+    
     width: 200px;
     padding: 20px;
 `
 
 const Conteudo = styled.div`
+    
     display: flex;
-    padding: 20px;
+    padding: 80px;
+`
+
+const Container = styled.div`
+
+    padding: 100px;
+
 `
 
 
 
 function SobreTodos() {
     return (
-        <div>
+        <Container>
             <Titulo> Quem Somos </Titulo>
-
+            <hr/>
             <Conteudo>
 
                 <Texto>
@@ -45,27 +53,27 @@ function SobreTodos() {
 
                 <table>
 
-                <td>
-                <a href='https://github.com/FabioSpindola'>
-                    <Foto src={imagefabio} alt="foto fabio" />
-                </a>
+                    <td>
+                        <a href='https://github.com/FabioSpindola'>
+                            <Foto src={imagefabio} alt="foto fabio" />
+                        </a>
 
 
-                <a href='https://github.com/FabioSpindola'>
-                    <Foto src={imagefabio} alt="foto fabio" />
-                </a>
-                </td>
+                        <a href='https://github.com/FabioSpindola'>
+                            <Foto src={imagefabio} alt="foto fabio" />
+                        </a>
+                    </td>
 
-                <td>
-                <a href='https://github.com/FabricioNasci'>
-                    <Foto src={imagefabri} alt="foto fabricio" />
-                </a>
+                    <td>
+                        <a href='https://github.com/FabricioNasci'>
+                            <Foto src={imagefabri} alt="foto fabricio" />
+                        </a>
 
-                <a href='https://github.com/FabricioNasci'>
-                    <Foto src={imagefabri} alt="foto fabricio" />
-                </a>
+                        <a href='https://github.com/FabricioNasci'>
+                            <Foto src={imagefabri} alt="foto fabricio" />
+                        </a>
 
-                </td>
+                    </td>
 
                 </table>
 
@@ -73,7 +81,7 @@ function SobreTodos() {
 
 
 
-        </div>
+        </Container>
     )
 }
 
