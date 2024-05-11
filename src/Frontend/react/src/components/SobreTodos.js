@@ -13,7 +13,7 @@ const Titulo = styled.h1`
 const Texto = styled.p`
     
     text-align: justify;  
-    padding: 0 40px;  
+    padding: 0 20px;  
    
 `
 
@@ -34,7 +34,7 @@ const Conteudo = styled.div`
 
 const Container = styled.div`
 
-    padding: 100px;
+    padding: 20px;
     
 
 `
