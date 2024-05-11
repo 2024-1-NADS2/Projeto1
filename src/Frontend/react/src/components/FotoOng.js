@@ -36,9 +36,9 @@ function ImagensOng() {
                 <h3>Historia da Ong</h3>
                 <ImgLogo>
                     <img src={LogoUnidasVenceremos} alt="Logo Mulheres Unidas Venceremos" />
-                    <hr />
+                    
                 </ImgLogo>
-
+                <hr />
               
                 
                 <Pe>
