@@ -3,27 +3,68 @@ import { Link } from 'react-router-dom';
 import React from "react";
 import UnidasVenceremos from '../assets/foto_ong_01.jpg'
 import LogoUnidasVenceremos from '../assets/logo-assoc-mulheres-pequeno.png';
+import DoacaoOng from '../assets/Foto_Ong_associacao.jpg'
 
-
-const ImgOng = styled.div`
-    border-radius: 50px;
-    width: 100%px;
+const Doacao = styled.img`
+border-radius: 10px;
+    width: 400px;
+    height: 200px;
     align-items: right;
     text-align: center;
-    margin-top: 20px
-
+    margin-left: 900px;
+    margin-top: -320px;
 `
-const Pe = styled.div`
+
+const ImgOng = styled.img`
+    border-radius: 10px;
+    width: 400px;
+    height: 200px;
+    align-items: right;
+    text-align: center;
+    margin-left: 900px;
+    margin-top: 80px;
+`
+const Pe = styled.p`
     font-family:Arial, Helvetica, sans-serif;
+    column-count: 2;
+    margin:30px;
+    padding: 20px;
+
     column-count: 4;
     margin-top: 20px;
     padding: 100px;
     text-align: justify;
+    margin-top:10px;
+    margin-right: 500px;
 
 `
 const ImgLogo = styled.div`
     text-align: center;
 `
+const H3 = styled.h3`
+    text-align: left;
+    margin-top: -260px;
+    margin-left: 50px;
+    font-weight: bold;
+`
+const AtividadesH3 = styled.h3`
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 20px;
+`
+const FestaP =styled.p`
+    text-align: center;
+    margin-left: 800px;
+    margin-top: -60px;
+
+`
+const DoacaoP =styled.p`
+    text-align: center;
+    margin-left: 800px;
+    margin-top: -70px;
+`
+
+
 
 
 
