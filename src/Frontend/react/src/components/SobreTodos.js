@@ -3,8 +3,19 @@ import styled from 'styled-components'
 import imagefabio from '../assets/18fabio.png'
 import imagefabri from '../assets/20fabricio.png'
 
+const Container = styled.div`
 
+  /* @media (max-width: 1201px) {
+    
+    width:100px;
+    flex-direction: column;
+    background-color:red;
+   
 
+  } */
+    
+
+`
 
 const Titulo = styled.h1`
   
@@ -22,8 +33,9 @@ const Foto = styled.img`
     width: 250px;
     padding: 0px;
     padding-right:20px;
-    flex-direction: column
-   
+    /* flex-direction: column; */
+
+
 `
 
 const Conteudo = styled.div`
@@ -32,12 +44,7 @@ const Conteudo = styled.div`
     padding: 20px;
 `
 
-const Container = styled.div`
 
-    padding: 20px;
-    
-
-`
 
 
 function SobreTodos() {
@@ -108,3 +115,5 @@ function SobreTodos() {
 }
 
 export default SobreTodos
+
+
