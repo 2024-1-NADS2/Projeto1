@@ -5,15 +5,9 @@ import imagefabri from '../assets/20fabricio.png'
 
 const Container = styled.div`
 
-  /* @media (max-width: 1201px) {
-    
-    width:100px;
-    flex-direction: column;
-    background-color:red;
-   
+    padding: 80px;
 
-  } */
-    
+ 
 
 `
 
@@ -24,15 +18,15 @@ const Titulo = styled.h1`
 const Texto = styled.p`
     
     text-align: justify;  
-    padding: 0 20px;  
+    padding: 0 20px;
    
 `
 
 const Foto = styled.img`
      
-    width: 250px;
-    padding: 0px;
-    padding-right:20px;
+    width: 200px;
+    padding: 20px;
+    padding-right:50px;
     /* flex-direction: column; */
 
 

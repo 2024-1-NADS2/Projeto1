@@ -1,24 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Button from 'react-bootstrap/Button';
+
 
 const Container = styled.div`
 
-  padding: 80px
+  padding: 80px;
 
 
 `
 
 const Titulo = styled.h1`
- 
+  margin: 20px;
 `
 
 const Texto = styled.p`
 
     text-align: justify;
     column-count: 3;
-    margin: 20px;
+    margin: 30px;
     text-indent: 20px;
+  
     
 
 `
