@@ -44,9 +44,6 @@ const Pe = styled.p`
     margin-top: -20px
 
 `
-const ImgLogo = styled.div`
-    text-align: center;
-`
 const H3 = styled.h3`
     text-align: left;
     margin-top: -260px;
@@ -58,20 +55,6 @@ const AtividadesH3 = styled.h3`
     margin-left: 40px;
     margin-top: 20px;
 `
-const FestaP =styled.p`
-    text-align: center;
-    margin-left: 800px;
-    margin-top: -60px;
-
-`
-const DoacaoP =styled.p`
-    text-align: center;
-    margin-left: 800px;
-    margin-top: -70px;
-`
-
-
-
 
 
 function ImagensOng() {
