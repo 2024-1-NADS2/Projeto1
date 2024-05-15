@@ -22,8 +22,11 @@ const EntidadesContainer = styled.div`
         width: 100%;
     } 
     `
-    const H1 = styled.div`
-    text-align: center;
+    const H1 = styled.h1`
+    text-align: left;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-left: 20px;
 
     `
     
@@ -35,7 +38,7 @@ function EntidadeParceira(){
             <EntidadesContainer>
             <Header/>
             <H1>
-            <h1>Associação Mulheres Unidas Venceremos</h1>
+            Associação Mulheres Unidas Venceremos
             </H1>
             <FotoOng />
 
