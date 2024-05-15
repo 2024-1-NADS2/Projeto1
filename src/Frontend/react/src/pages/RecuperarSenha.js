@@ -1,10 +1,10 @@
 import React from 'react';
-import FormularioDoacao from '../components/FormularioDoacao';
+import FormularioRecuperarSenha from '../components/FormularioRecuperarSenha';
 import styled from 'styled-components';
 import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom';
 
-const DoacaoContainer = styled.div`
+const RecuperarSenhaContainer = styled.div`
     @media only screen and (min-width: 1201px){  
         display: flex;
         align-content: center;
@@ -47,7 +47,7 @@ const DoacaoContainer = styled.div`
     }
 `
 
-const FormularioDoacaoContainer = styled.div`
+const FormularioRecuperarSenhaContainer = styled.div`
     @media only screen and (min-width: 1201px) {
         background-color: #ffff;
         display: flex;
@@ -55,7 +55,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 1000px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 1200px) and (min-width: 1025px) {
         background-color: #ffff;
@@ -64,7 +64,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 900px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 1024px) and (min-width: 769px) {
         background-color: #ffff;
@@ -73,7 +73,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 700px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 768px) and (min-width: 481px) {
         background-color: #ffff;
@@ -82,7 +82,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 450px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 480px) and (min-width: 320px) {
         background-color: #ffff;
@@ -91,7 +91,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 300px;
-        height: 800px;
+        height: 600px;
     }
 `
 
@@ -144,19 +144,19 @@ const FotoContainer = styled.div`
     }
 `
 
-function Doacao(){
+function RecuperarSenha(){
     return(
-        <DoacaoContainer>
-            <FormularioDoacaoContainer>
+        <RecuperarSenhaContainer>
+            <FormularioRecuperarSenhaContainer>
                 <FotoContainer>
                     <Link to={"/"}>
                         <img src={Logo} alt="Logo DoaMais" />
                     </Link>
                 </FotoContainer>
-                <FormularioDoacao/>
-            </FormularioDoacaoContainer>
-        </DoacaoContainer>
+                <FormularioRecuperarSenha/>
+            </FormularioRecuperarSenhaContainer>
+        </RecuperarSenhaContainer>
     );
 }
 
-export default Doacao;
+export default RecuperarSenha;

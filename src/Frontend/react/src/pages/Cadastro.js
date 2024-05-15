@@ -53,7 +53,7 @@ const FormularioCadastroContainer = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 1000px;
         height: 800px;
     }
@@ -62,7 +62,7 @@ const FormularioCadastroContainer = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 900px;
         height: 800px;
     }
@@ -71,7 +71,7 @@ const FormularioCadastroContainer = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 700px;
         height: 800px;
     }
@@ -80,7 +80,7 @@ const FormularioCadastroContainer = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 450px;
         height: 800px;
     }
@@ -89,7 +89,7 @@ const FormularioCadastroContainer = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 300px;
         height: 800px;
     }

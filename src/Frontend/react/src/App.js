@@ -9,6 +9,7 @@ import ComoFunciona from './pages/ComoFunciona';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
 import Doacao from './pages/Doacao';
+import RecuperarSenha from './pages/RecuperarSenha';
 import GlobalStyles from './styles/GlobalStyle';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import VLibras from 'vlibras-nextjs';
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element = {<Login />}/>
         <Route path="/cadastro" element = {<Cadastro />}/>
         <Route path="/doacao" element = {<Doacao />}/>
+        <Route path="/recuperarsenha" element = {<RecuperarSenha />}/>
       </Routes>
       <VLibras forceOnload />
     </Router>   

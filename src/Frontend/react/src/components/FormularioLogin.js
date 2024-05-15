@@ -140,7 +140,7 @@ function FormularioLogin(){
                     <label for="exampleInputPassword1" class="form-label">Senha</label>
                     <input type="password" class="form-control" id="exampleInputPassword1"/>
                 </div>
-                <p><StyledLink to="/">Esqueci a Senha</StyledLink></p>
+                <p><StyledLink to="/recuperarsenha">Esqueci a Senha</StyledLink></p>
                 <p><StyledLink to="/cadastro">Ainda não sou Doador</StyledLink></p>
                 <button type="submit" class="btn btn-danger">Acessar</button>
             </form>
