@@ -162,6 +162,7 @@ const H3 = styled.h3`
     margin-top: -260px;
     margin-left: 50px;
     font-weight: bold;
+    text-align: center;
 `
 const AtividadesH3 = styled.h3`
     font-weight: bold;
