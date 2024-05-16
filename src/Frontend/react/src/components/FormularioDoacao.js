@@ -98,6 +98,11 @@ function FormularioCupom(){
                 <a>Doação de Cupom Fiscal</a>
             </Texto>
             <form>
+            <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                    <div class="form-text" id="basic-addon4">Informe o e-mail cadastrado.</div>
+                </div>
                 <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">ONG Beneficiada</label>
                     <select class="form-select" aria-label="Default select example">
@@ -116,7 +121,7 @@ function FormularioCupom(){
                         <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload"/>
                         <button class="btn btn-outline-danger" type="button" id="inputGroupFileAddon04">Enviar</button>
                     </div>
-                    <div class="form-text" id="basic-addon4">Realize o envio somente de arquivos em .JPG, .PNG ou PDF.</div>
+                    <div class="form-text" id="basic-addon4">Realize o envio somente de arquivos em .JPG ou .PNG.</div>
                 </div>
             </form>
         </FormularioContainer>

@@ -55,7 +55,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 1000px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 1200px) and (min-width: 1025px) {
         background-color: #ffff;
@@ -64,7 +64,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 900px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 1024px) and (min-width: 769px) {
         background-color: #ffff;
@@ -73,7 +73,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 700px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 768px) and (min-width: 481px) {
         background-color: #ffff;
@@ -82,7 +82,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 450px;
-        height: 800px;
+        height: 600px;
     }
     @media (max-width: 480px) and (min-width: 320px) {
         background-color: #ffff;
@@ -91,7 +91,7 @@ const FormularioDoacaoContainer = styled.div`
         justify-content: center;
         border-radius: 10px;
         width: 300px;
-        height: 800px;
+        height: 600px;
     }
 `
 
