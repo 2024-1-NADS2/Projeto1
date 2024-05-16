@@ -7,41 +7,154 @@ import DoacaoOng from '../assets/Foto_Ong_associacao.jpg'
 import HortaOng from '../assets/Horta.jpg'
 
 const Doacao = styled.img`
-    border-radius: 10px;
-    width: 400px;
-    height: 200px;
-    align-items: right;
-    text-align: center;
-    margin-left: 900px;
-    margin-top: -320px;
+ @media only screen and (min-width: 1201px){
+        border-radius: 10px;
+        width: 400px;
+        height: 200px;
+        align-items: right;
+        text-align: center;
+        margin-left: 880px;
+        margin-top: -300px;
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        border-radius: 10px;
+        text-align: right;
+        align-items: right;
+        width: 350px;
+        height: 200px;
+        margin-top: -432px;
+        margin-left: 680px; 
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        border-radius: 10px;
+        text-align: right;
+        align-items: right;
+        width: 350px;
+        height: 200px;
+        margin-top: -500px;
+        margin-left: 600px;    
+     } 
+    @media (max-width: 768px) and (min-width: 481px){
+        width: 350px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 35px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        width: 100%;
+        border-radius: 10px;
+        margin-left:20px;
+    } 
+  
+
 `
 const Logo = styled.img`
-    align-items: right;
+    @media only screen and (min-width: 1201px){
+     align-items: right;
     text-align: center;
-    margin-left: 950px;
+    margin-left: 880px;
     margin-top: -420px;
     width: 300px;
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+    } 
+    @media (max-width: 768px) and (min-width: 481px){
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
 
+    }
+    align-items: right;
+    text-align: center;
+    margin-left: 880px;
+    margin-top: -420px;
+    width: 300px;
 `
 
 
 const ImgOng = styled.img`
+ @media only screen and (min-width: 1201px){
     border-radius: 10px;
     width: 400px;
     height: 200px;
     align-items: right;
     text-align: center;
-    margin-left: 900px;
+    margin-left: 880px;
     margin-top: 80px;
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        border-radius: 10px;
+        width: 350px;
+        height: 200px;
+        align-items: right;
+        text-align: center;
+        margin-left: 680px;
+        margin-top: 80px;    
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        border-radius: 10px;
+        width: 350px;
+        height: 200px;
+        align-items: right;
+        text-align: center;
+        margin-left: 600px;
+        margin-top: 80px;    
+     } 
+    @media (max-width: 768px) and (min-width: 481px){
+        width: 350px;
+        border-radius: 10px;
+        height: 250px;
+        margin-left: 35px;
+        margin-top: 600px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        width: 100%;
+        border-radius: 10px;
+        margin-left:20px;
+    } 
+    
 `
 const Pe = styled.p`
+@media only screen and (min-width: 1201px){
     font-family:Arial, Helvetica, sans-serif;
     column-count: 2;
-    margin:30px;
     padding: 20px;
     text-align: justify;
     margin-right: 500px;
-    margin-top: -20px
+    margin-top: -20px;
+    margin-left: 20px;
+       
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        font-family:Arial, Helvetica, sans-serif;
+        column-count: 1;
+        margin:30px;
+        padding: 10px;
+        text-align: justify;
+        margin-right: 500px;
+        margin-top: -20px;
+        margin-left: 20px
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        font-family:Arial, Helvetica, sans-serif;
+        column-count: 1;
+        padding: 20px;
+        text-align: justify;
+        margin-right: 400px;
+        margin-top: -20px;
+        margin-left: 10px   
+     } 
+    @media (max-width: 768px) and (min-width: 481px){
+        width: 100%;
+        margin-left:5px;
+        margin-top: 400px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        width: 100%;
+        margin-left: 20px;
+    } 
+   
 
 `
 const H3 = styled.h3`
@@ -55,12 +168,16 @@ const AtividadesH3 = styled.h3`
     margin-left: 40px;
     margin-top: 20px;
 `
+const PaiContainer = styled.div`
+
+`
 
 
 function ImagensOng() {
     return (
-        <div>
+        <PaiContainer>
             <ImgOng src={UnidasVenceremos} alt="Foto Mulheres Unidas Venceremos" />
+                
                 <H3>História da Ong</H3>
                 <hr />
                 <Pe>
@@ -83,7 +200,7 @@ function ImagensOng() {
             <Pe>A Associação de Mulheres Unidas Venceremos é um exemplo inspirador de solidariedade e compromisso comunitário, mostrando como pequenas ações podem ter um grande impacto na vida das pessoas mais necessitadas.<br></br>A ONG busca captar recursos por meio de bazares e doações de materiais para artesanato, roupas, calçados e alimentos não perecíveis.<br></br>No entanto, enfrenta desafios na captação de recursos para expandir suas atividades, incluindo a implementação de aulas de costura no futuro.<br></br> Essa expansão é vista como uma oportunidade valiosa para oferecer novas habilidades à comunidade atendida pela ONG, contribuindo para o desenvolvimento pessoal e profissional dos participantes.<br></br> Apesar das dificuldades enfrentadas, a organização está comprometida em buscar alternativas criativas e sustentáveis para garantir o sucesso de seus projetos e a continuidade de seu impacto positivo na comunidade.</Pe>
             <Logo src={LogoUnidasVenceremos} alt = "Logo Mulheres Unidas" />
 
-        </div>
+        </PaiContainer>
 
 
 
