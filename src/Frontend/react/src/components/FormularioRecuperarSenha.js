@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from 'react-router-dom';
 
 const FormularioContainer= styled.div`
     @media only screen and (min-width: 1201px){
@@ -90,43 +91,27 @@ const Texto = styled.div`
     }
 `
 
-function FormularioCadastro(){
+function FormularioRecuperarSenha(){
     return(
         <FormularioContainer>
             <Texto>
-                <a>Primeiro Acesso - Cadastrar Senha</a>
+                <a>Alterar Senha</a>
             </Texto>
             <form>
                 <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Tipo de Pessoa</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecione uma opção</option>
-                        <option value="1">Pessoa Física</option>
-                        <option value="2">Pessoa Jurídica</option>
-                    </select>
+                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Nome Completo</label>
-                    <input class="form-control" type="text"/>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Telefone</label>
-                    <input class="form-control" type="text"/>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@examplo.com"/>
-                </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
+                    <label for="exampleInputPassword1" class="form-label">Nova Senha</label>
                     <input type="password" class="form-control" id="exampleInputPassword1"/>
                     <div id="passwordHelpBlock" class="form-text"> Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.</div>
                 </div>
-                <button type="submit" class="btn btn-danger">Concluir Cadastro</button>
+                <button type="submit" class="btn btn-danger">Alterar</button>
             </form>
         </FormularioContainer>
     );
 }
 
 
-export default FormularioCadastro;
+export default FormularioRecuperarSenha;

@@ -118,10 +118,6 @@ function LocaisColeta() {
             </AACDContainer>
 
         </DivContainer>
-
-
-
-
     )
 
 

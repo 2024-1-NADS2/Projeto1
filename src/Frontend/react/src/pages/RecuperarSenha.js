@@ -1,10 +1,10 @@
 import React from 'react';
-import FormularioDoacao from '../components/FormularioDoacao';
+import FormularioRecuperarSenha from '../components/FormularioRecuperarSenha';
 import styled from 'styled-components';
 import Logo from '../assets/logo.png'
 import { Link } from 'react-router-dom';
 
-const DoacaoContainer = styled.div`
+const RecuperarSenhaContainer = styled.div`
     @media only screen and (min-width: 1201px){  
         display: flex;
         align-content: center;
@@ -47,7 +47,7 @@ const DoacaoContainer = styled.div`
     }
 `
 
-const FormularioDoacaoContainer = styled.div`
+const FormularioRecuperarSenhaContainer = styled.div`
     @media only screen and (min-width: 1201px) {
         background-color: #ffff;
         display: flex;
@@ -144,19 +144,19 @@ const FotoContainer = styled.div`
     }
 `
 
-function Doacao(){
+function RecuperarSenha(){
     return(
-        <DoacaoContainer>
-            <FormularioDoacaoContainer>
+        <RecuperarSenhaContainer>
+            <FormularioRecuperarSenhaContainer>
                 <FotoContainer>
                     <Link to={"/"}>
                         <img src={Logo} alt="Logo DoaMais" />
                     </Link>
                 </FotoContainer>
-                <FormularioDoacao/>
-            </FormularioDoacaoContainer>
-        </DoacaoContainer>
+                <FormularioRecuperarSenha/>
+            </FormularioRecuperarSenhaContainer>
+        </RecuperarSenhaContainer>
     );
 }
 
-export default Doacao;
+export default RecuperarSenha;

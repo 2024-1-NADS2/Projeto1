@@ -53,45 +53,45 @@ const FormularioCadastroContainer = styled.div`
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 1000px;
-        height: 800px;
+        height: 670px;
     }
     @media (max-width: 1200px) and (min-width: 1025px) {
         background-color: #ffff;
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 900px;
-        height: 800px;
+        height: 670px;
     }
     @media (max-width: 1024px) and (min-width: 769px) {
         background-color: #ffff;
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
-        width: 700px;
-        height: 800px;
+        border-radius: 10px;
+        width: 650px;
+        height: 670px;
     }
     @media (max-width: 768px) and (min-width: 481px) {
         background-color: #ffff;
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 450px;
-        height: 800px;
+        height: 670px;
     }
     @media (max-width: 480px) and (min-width: 320px) {
         background-color: #ffff;
         display: flex;
         align-content: center;
         justify-content: center;
-        border-radius: 8px;
+        border-radius: 10px;
         width: 300px;
-        height: 800px;
+        height: 670px;
     }
 `
 
