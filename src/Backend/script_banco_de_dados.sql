@@ -1,26 +1,27 @@
 -- Cria o banco de dados --
-CREATE database doamais;
+CREATE DATABASE doamais;
 
 -- Usa o banco de dados --
 USE doamais;
 
 -- Cria as tabelas --
-CREATE TABLE usuarios(
-	id_usuario INT PRIMARY KEY,
+
+CREATE TABLE usuarios (
+    id_usuario INT AUTO_INCREMENT UNIQUE,
     nome VARCHAR(100) NOT NULL,
-    senha VARCHAR(12) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    telefone VARCHAR(18),
-    tipo_pessoa VARCHAR(2)
+    senha VARCHAR(255) NOT NULL,
+    email VARCHAR(100) NOT NULL PRIMARY KEY,
+    telefone VARCHAR(15),
+    tipo_pessoa INT NOT NULL  -- 0 para CPF, 1 para CNPJ --
 );
 
-CREATE TABLE cupons(
-	id_cupom INT PRIMARY KEY,
+CREATE TABLE cupons (
+    id_cupons INT  AUTO_INCREMENT PRIMARY KEY,
     data_envio DATETIME NOT NULL,
-    ong_beneficiada VARCHAR(100) NOT NULL,
-	valor_cupom DOUBLE NOT NULL,
-    id_usuario INT NOT NULL,
-    CONSTRAINT Fkid_usuario FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario)
+    ong_beneficiada VARCHAR(100),
+    valor_cupom DOUBLE NOT NULL,
+    email VARCHAR(100),
+    CONSTRAINT Fkemail_usuario FOREIGN KEY (email) REFERENCES usuarios(email)
 );
 
 CREATE TABLE ongs(
@@ -33,9 +34,9 @@ CREATE TABLE ongs(
 );
 
 CREATE TABLE recebe(
-	documento VARCHAR(255) NOT NULL, -- Caminmho onde foi armazenado o cupom fiscal --
-    id_usuario INT NOT NULL,
+	documento VARCHAR(255) NOT NULL, -- Caminmho onde foi armazenado o cupons fiscal --
+    email VARCHAR(100) NOT NULL,
     id_ong INT NOT NULL,
-    CONSTRAINT Fkid_doador FOREIGN KEY (id_usuario) REFERENCES usuarios(id_usuario),
+    CONSTRAINT Fkemail_doador FOREIGN KEY (email) REFERENCES usuarios(email),
     CONSTRAINT Fkid_ong FOREIGN KEY (id_ong) REFERENCES ongs(id_ong)
 );
