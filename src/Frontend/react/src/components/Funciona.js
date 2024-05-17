@@ -3,10 +3,7 @@ import styled from 'styled-components'
 
 
 const Container = styled.div`
-
-  padding: 20px;
-
-
+padding:20px;
 `
 
 const Titulo = styled.h1`
@@ -14,13 +11,39 @@ const Titulo = styled.h1`
 `
 
 const Texto = styled.p`
-
+@media only screen and (min-width: 1201px){
     text-align: justify;
     column-count: 3;
     margin: 30px;
     text-indent: 20px;
-  
-    
+}
+@media (max-width: 1200px) and (min-width: 1025px){
+    text-align: justify;
+    column-count: 3;
+    margin: 30px;
+    text-indent: 20px;
+}
+@media (max-width: 1024px) and (min-width: 769px){
+    text-align: justify;
+    column-count: 2;
+    margin: 30px;
+    text-indent: 20px;
+}
+
+@media (max-width: 768px) and (min-width: 481px){
+    text-align: justify;
+    column-count: 2;
+    margin: 30px;
+    text-indent: 20px;
+}
+
+@media (max-width: 480px) and (min-width: 320px){
+    text-align: justify;
+    column-count: 1;
+    margin: 30px;
+    text-indent: 20px;
+}
+      
 
 `
 
@@ -31,7 +54,7 @@ function Funciona() {
         <Container>
             <Titulo> <strong>A doação funciona assim </strong> </Titulo>
 
-            <hr></hr>
+            <hr />
 
             <Texto>
 
