@@ -7,7 +7,7 @@ import DoacaoOng from '../assets/Foto_Ong_associacao.jpg'
 import HortaOng from '../assets/Horta.jpg'
 
 const Doacao = styled.img`
- @media only screen and (min-width: 1201px){
+    @media only screen and (min-width: 1201px){
         border-radius: 10px;
         width: 400px;
         height: 200px;
@@ -41,8 +41,6 @@ const Doacao = styled.img`
         margin-left: 35px;
         margin: 20px auto;
         display:block;
-
-
     } 
     @media (max-width: 480px) and (min-width: 320px){
         width: 80%;
@@ -54,11 +52,11 @@ const Doacao = styled.img`
 `
 const Logo = styled.img`
     @media only screen and (min-width: 1201px){
-     align-items: right;
-    text-align: center;
-    margin-left: 880px;
-    margin-top: -420px;
-    width: 300px;
+        align-items: right;
+        text-align: center;
+        margin-left: 880px;
+        margin-top: -420px;
+        width: 300px;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
     } 
@@ -69,24 +67,19 @@ const Logo = styled.img`
     @media (max-width: 480px) and (min-width: 320px){
 
     }
-    align-items: right;
-    text-align: center;
-    margin-left: 880px;
-    margin-top: -420px;
-    width: 300px;
 `
 
 
 const ImgOng = styled.img`
- @media only screen and (min-width: 1201px){
-    border-radius: 10px;
-    width: 400px;
-    height: 200px;
-    align-items: right;
-    text-align: center;
-    margin-left: 750px;
-    margin-top: -400px;
-    }
+    @media only screen and (min-width: 1201px){
+        border-radius: 10px;
+        width: 400px;
+        height: 200px;
+        align-items: right;
+        text-align: center;
+        margin-left: 750px;
+        margin-top: -400px;
+        }
     @media (max-width: 1200px) and (min-width: 1025px){
         border-radius: 10px;
         width: 350px;
@@ -104,7 +97,7 @@ const ImgOng = styled.img`
         text-align: center;
         margin-left: 650px;
         margin-top: -500px;    
-     } 
+        } 
     @media (max-width: 768px) and (min-width: 481px){
         width: 450px;
         border-radius: 10px;
@@ -117,8 +110,7 @@ const ImgOng = styled.img`
         width: 80%;
         border-radius: 10px;
         margin-left:20px;
-    } 
-    
+    }    
 `
 const Pe = styled.p`
 @media only screen and (min-width: 1201px){
@@ -175,9 +167,8 @@ const AtividadesH3 = styled.h3`
     margin-top: 20px;
 `
 const PaiContainer = styled.div`
-max-width: 1200px;
-margin:0 auto;
-
+    max-width: 1200px;
+    margin:0 auto;
 `
 
 
@@ -206,14 +197,8 @@ function ImagensOng() {
             <hr />
             <Pe>A Associação de Mulheres Unidas Venceremos é um exemplo inspirador de solidariedade e compromisso comunitário, mostrando como pequenas ações podem ter um grande impacto na vida das pessoas mais necessitadas.<br></br>A ONG busca captar recursos por meio de bazares e doações de materiais para artesanato, roupas, calçados e alimentos não perecíveis.<br></br>No entanto, enfrenta desafios na captação de recursos para expandir suas atividades, incluindo a implementação de aulas de costura no futuro.<br></br> Essa expansão é vista como uma oportunidade valiosa para oferecer novas habilidades à comunidade atendida pela ONG, contribuindo para o desenvolvimento pessoal e profissional dos participantes.<br></br> Apesar das dificuldades enfrentadas, a organização está comprometida em buscar alternativas criativas e sustentáveis para garantir o sucesso de seus projetos e a continuidade de seu impacto positivo na comunidade.</Pe>
             <Logo src={LogoUnidasVenceremos} alt = "Logo Mulheres Unidas" />
-
         </PaiContainer>
-
-
-
     )
-
-
 }
 export default ImagensOng
 

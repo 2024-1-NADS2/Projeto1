@@ -21,14 +21,13 @@ const EntidadesContainer = styled.div`
     @media (max-width: 480px) and (min-width: 320px){
         width: 100%;
     } 
-    `
-    const H1 = styled.h1`
+`
+const H1 = styled.h1`
     text-align: left;
     margin-top: 20px;
     font-weight: bold;
     margin-left: 20px;
-
-    `
+`
     
     
 
@@ -41,7 +40,6 @@ function EntidadeParceira(){
             Associação Mulheres Unidas Venceremos
             </H1>
             <FotoOng />
-
             <Footer/>
             </EntidadesContainer>
 
