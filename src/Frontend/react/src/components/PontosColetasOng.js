@@ -2,64 +2,186 @@ import styled from "styled-components";
 import React from "react";
 import LogoMulheresUnidas from '../assets/logo-assoc-mulheres-pequeno.png';
 import LogoExercito from '../assets/logo-exerc-salvacao-pequeno.png';
-import LogoAacd from '../assets/logo-aacd-pequeno.png';
+import LogoEmocentro from '../assets/Hemocentro1.jpg';
 
 
 
 
 const Coletah1 = styled.h1`
+@media only screen and (min-width: 1201px){
     text-align: left;
     margin-top: 20px;
     font-weight: bold;
     margin-left: 20px;
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        text-align: left;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-left: 20px;   
+     } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        text-align: left;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+    } 
+    @media (max-width: 768px) and (min-width: 481px){
+        text-align: left;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        text-align: left;
+        margin-top: 20px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+   
 `
 const LogoMulheresUni = styled.img`
+@media only screen and (min-width: 1201px){
     padding:10px;
     width: 300px;
     margin-left: 50px;
-
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        padding:10px;
+        width: 300px;
+        margin-left: 50px;
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        padding:10px;
+        width: 300px;
+        margin-left: 50px;
+    } 
+    @media (max-width: 768px) and (min-width: 481px){
+        padding:10px;
+        width: 300px;
+        margin-left: 50px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        padding:10px;
+        width: 300px;
+        margin-left: 10px;
+	}
 `
 const DivContainer = styled.div`
     padding:20px;
 `
 const MulheresP = styled.p`
-   text-align: justify; 
+@media only screen and (min-width: 1201px){
+    text-align: justify; 
    margin-top: -20px;
    font-weight:bold;
    margin-left: 20px;
    font-family:Arial, Helvetica, sans-serif;
-
-
-
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        text-align: justify; 
+        margin-top: -20px;
+        font-weight:bold;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        text-align: justify; 
+        margin-top: -20px;
+        font-weight:bold;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    } 
+    @media (max-width: 768px) and (min-width: 481px){
+        text-align: justify; 
+        margin-top: -20px;
+        font-weight:bold;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        text-align: justify; 
+        margin-top: -20px;
+        font-weight:bold;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+	}
 `
 const DoacaoP = styled.p`
+@media only screen and (min-width: 1201px){
     text-align:justify;
     column-count:2;
     margin-left: 20px;
     font-family:Arial, Helvetica, sans-serif;
     margin-right: 20px;
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        text-align:justify;
+        column-count:2;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-right: 20px;
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        text-align:justify;
+        column-count:1;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-right: 20px;
+    } 
+    @media (max-width: 768px) and (min-width: 481px){
+        text-align:justify;
+        column-count:1;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-right: 20px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        text-align:justify;
+        column-count:1;
+        margin-left: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        margin-right: 20px;
+        width: 100%;
+	}
 
 `
 const MapaContainer = styled.div`
-    text-align: right;
-    margin-top: -470px;
-    margin-bottom: 200px;
-    margin-right: 60px;
+    @media only screen and (min-width: 1201px){
+        text-align: right;
+        margin-top: -490px;
+        margin-bottom: 200px;
+        margin-right: 50px;
+    }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        margin-top:25px;
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 50px;
+        margin-top:20px;
+    } 
+    @media (max-width: 768px) and (min-width: 481px){
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top:20px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        width: 80%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 70px;
+        margin-top:20px;
+	}
+`
 
-
-`
-const ExercitoContainer = styled.div`
-    text-align: right;
-    margin-top: -420px;
-    margin-bottom: 200px;
-    margin-right: 60px;
-`
-const AACDContainer = styled.div`
-    text-align: right;
-    margin-top: -470px;
-    margin-bottom: 200px;
-    margin-right: 60px;
-`
 
 
 function LocaisColeta() {
@@ -67,6 +189,7 @@ function LocaisColeta() {
     return (
         <DivContainer>
             <Coletah1>Pontos de Coleta</Coletah1>
+            <br></br>
             <hr />
             <LogoMulheresUni src={LogoMulheresUnidas} alt="Logo Mulheres Unidas" />
             <MulheresP>Leve a sua doação a um ponto de arrecadação.</MulheresP>
@@ -80,7 +203,7 @@ function LocaisColeta() {
             <MapaContainer>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.409686123078!2d-46.64561682422835!3d-23.55372517880513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b25edcf751%3A0x65dc308b71d5fd05!2sR.%20Maj.%20Diogo%2C%20285%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001324-001!5e0!3m2!1spt-BR!2sbr!4v1715556526773!5m2!1spt-BR!2sbr"
-                    width="600"
+                    width="500"
                     height="300"
                     style={{ border: "0" }}
                     allowFullScreen=""
@@ -90,6 +213,9 @@ function LocaisColeta() {
                 ></iframe>
             </MapaContainer>
             <hr />
+            <br></br>
+            <br></br>
+
             <LogoMulheresUni src={LogoExercito} alt="Logo Exercicito da Salvação" />
             <MulheresP>Endereço: Avenida São Miguel, nº 8400, Vila Norma São Paulo - SP</MulheresP>
             <MulheresP>Telefone: (11) 4003-2299</MulheresP>
@@ -100,22 +226,27 @@ function LocaisColeta() {
                 A coleta é feita por uma equipe uniformizada na data agendada. Entramos em contato para informar sobre a proximidade e imprevistos.
             </DoacaoP>
 
-            <ExercitoContainer>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.927748502918!2d-46.457261224229796!3d-23.4991117788427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616c465eb7db%3A0x44b596bf00cf8716!2sAv.%20S%C3%A3o%20Miguel%2C%208400%20-%20Vila%20Norma%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008070-001!5e0!3m2!1spt-BR!2sbr!4v1715559880550!5m2!1spt-BR!2sbr" width="600" height="300" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </ExercitoContainer>
+            <MapaContainer>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.927748502918!2d-46.457261224229796!3d-23.4991117788427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616c465eb7db%3A0x44b596bf00cf8716!2sAv.%20S%C3%A3o%20Miguel%2C%208400%20-%20Vila%20Norma%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008070-001!5e0!3m2!1spt-BR!2sbr!4v1715559880550!5m2!1spt-BR!2sbr" width="500" height="300" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </MapaContainer>
             <hr />
-            <LogoMulheresUni src={LogoAacd} alt="Logo AACD" />
-            <MulheresP>Endereço: Av. Professor Ascendino Reis, nº 724, Ibirapuera – São Paulo – SP</MulheresP>
-            <MulheresP>Telefone: (11) 5576-0777</MulheresP>
-            <MulheresP>Email: doeaacd@aacd.org.br</MulheresP>
-            <MulheresP>Agência: 3381-2 Conta: 11.100-7</MulheresP>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <br></br>
+            <LogoMulheresUni src={LogoEmocentro} alt="Logo Hemocentro" />
+            <MulheresP>Endereço:  Av. Doutor Dante Pazzanese, nº 500, Ibirapuera São Paulo - SP</MulheresP>
+            <MulheresP>Telefone: (11) 4573-7800</MulheresP>
+            <MulheresP>Email: ouvidoria@prosangue.sp.gov.br</MulheresP>
             <DoacaoP>
-                A AACD é uma organização sem fins lucrativos focada em garantir assistência médico-terapêutica de excelência em Ortopedia e Reabilitação. A Instituição atende pessoas de todas as idades, recebendo pacientes via Sistema Único de Saúde (SUS), planos de saúde e particular.Você pode fazer doações mensais à AACD por meio de cartão de crédito, cartão de débito, depósito em conta ou boleto bancário. Contribua com o valor que desejar e ajude a AACD a garantir atendimento de excelência a milhares de pacientes!
+            O hemocentro desempenha um papel crucial na saúde pública, sendo responsável pela coleta de aproximadamente 40.000 doações de sangue por ano.<br></br> Além disso, realiza o registro e exames necessários para identificar doadores compatíveis de medula óssea, contribuindo significativamente para tratamentos que salvam vidas.<br></br> O hemocentro também se encarrega do fracionamento, distribuição e transfusão de hemocomponentes, assegurando que todos os pacientes em sua região de abrangência recebam o suporte necessário.<br></br> Anualmente, isso se traduz em cerca de 65.000 transfusões, fundamentais para o tratamento de diversas condições médicas, desde cirurgias e emergências até terapias para doenças crônicas.
             </DoacaoP>
             
-            <AACDContainer>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.202397077593!2d-46.6539785242272!3d-23.597073178775286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a2207483d79%3A0x4f768cad344fa95c!2sAv.%20Professor%20Ascendino%20Reis%2C%20724%20-%20Ibirapuera%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004027-000!5e0!3m2!1spt-BR!2sbr!4v1715562004291!5m2!1spt-BR!2sbr" width="600" height="300" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </AACDContainer>
+            <MapaContainer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.530729037079!2d-46.65393082422748!3d-23.585291778783343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f32b5def55%3A0x2c1883032738d643!2sAv.%20Dr.%20Dante%20Pazzanese%2C%20500%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004012-180!5e0!3m2!1spt-BR!2sbr!4v1715912883752!5m2!1spt-BR!2sbr" width="500" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </MapaContainer>
 
         </DivContainer>
     )
