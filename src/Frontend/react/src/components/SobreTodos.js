@@ -52,7 +52,7 @@ padding-left: 10px;
 function SobreTodos() {
     return (
         <Container>
-            <Titulo> Quem Somos </Titulo>
+            <Titulo> <strong> Quem Somos </strong> </Titulo>
             <hr />
             <Conteudo>
 
