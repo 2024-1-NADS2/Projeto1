@@ -4,6 +4,9 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     padding:20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
 `
 
 const Titulo = styled.h1`
@@ -13,12 +16,14 @@ const Titulo = styled.h1`
 const Texto = styled.p`
 @media only screen and (min-width: 1201px){
     text-align: justify;
-    column-count: 3;
+    column-count: 2;
+    column-gap:40px;
     margin: 30px;
+    padding: 0px 20px;
 }
 @media (max-width: 1200px) and (min-width: 1025px){
     text-align: justify;
-    column-count: 3;
+    column-count: 2;
     margin: 30px;
 }
 @media (max-width: 1024px) and (min-width: 769px){
