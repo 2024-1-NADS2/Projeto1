@@ -12,11 +12,7 @@ const Container = styled.div`
     max-width: 1200px;
     margin: 100px auto;
 }
-/* @media (max-width: 1200px) and (min-width: 1025px){
-    padding: 20px;
-    margin-right: 20px;
-    max-width: 200px;
-} */
+
 @media (max-width: 1024px) and (min-width: 769px){
     width: 100%;
     max-width: 1200px;
@@ -46,11 +42,7 @@ const Texto = styled.p`
     column-count:0 ;
     flex-direction: column;
 }
-/* @media (max-width: 1200px) and (min-width: 1025px){
-    text-align: justify;  
-    padding: 20px 20px 20px 91px;
-    column-count:0 ;
-} */
+
 @media (max-width: 1024px) and (min-width: 769px){
     text-align: justify;  
     padding: 20px 20px 20px 91px;
@@ -78,14 +70,7 @@ const Fotos = styled.div`
     margin-left: 60px;
    
 }
-/* @media (max-width: 1200px) and (min-width: 1025px){
-    width: 300px;
-    padding: 2px;
-    padding-right:70px;
-    display:flex;
-    padding-left:0px;
-    /* max-width: 5%; 
-} */
+
 @media (max-width: 1024px) and (min-width: 769px){
     width: 30px;
     padding: 20px;
@@ -111,12 +96,7 @@ const Conteudo = styled.div`
     display: flex;
     max-width: 50%;
 }
-/* @media (max-width: 1200px) and (min-width: 1025px){
-    display: flex;
-    display:table;
-    max-width: 50%; 
-    background-color: green;
-}  */
+
 @media (max-width: 1024px) and (min-width: 769px){
     display: flex;
     display:table;
