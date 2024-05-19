@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import styled from 'styled-components';
+import Faq from '../components/FaqSite';
 
 const FaqContainer = styled.div`
     @media only screen and (min-width: 1201px){
@@ -25,6 +26,7 @@ function FAQ(){
     return(
         <FaqContainer>
             <Header/>
+            <Faq />
             
             <Footer/>
         </FaqContainer>

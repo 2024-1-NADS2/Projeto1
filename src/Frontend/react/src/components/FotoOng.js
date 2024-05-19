@@ -8,12 +8,12 @@ import HortaOng from '../assets/Horta.jpg'
 const Doacao = styled.img`
     @media only screen and (min-width: 1201px){
         border-radius: 10px;
-        width: 400px;
+        width: 500px;
         height: 200px;
-        align-items: right;
+        align-items: center;
         text-align: center;
-        margin-left: 750px;
-        margin-top: -400px;
+        margin-left: 380px;
+        
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         border-radius: 10px;
@@ -119,9 +119,10 @@ const Pe = styled.p`
     column-count: 2;
     padding: 20px;
     text-align: justify;
-    margin-right: 500px;
-    margin-left: 20px;
+    margin-right: 700px;
+    margin-left: 0px;
     margin-top: 0px;
+    width: 100%;
        
     }
     @media (max-width: 1200px) and (min-width: 1025px){
@@ -159,41 +160,44 @@ const Pe = styled.p`
 const H3 = styled.h3`
 @media only screen and (min-width: 1201px){
     width: 100%;
-    text-align: left;
+    text-align: center;
     margin-left: 50px;
     font-weight: bold;
-    margin-top: 200px;
+    margin-top: 100px;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         width:100%;
         text-align:left;
         font-weight:bold;
         margin-left: 50px;
+        margin-top: 100px;
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         width:100%;
         text-align:center;
         font-weight:bold;
+        margin-top:50px
     } 
     @media (max-width: 768px) and (min-width: 481px){
         width:100%;
         text-align:center;
         font-weight:bold;  
+        margin-top: 50px;
       } 
     @media (max-width: 480px) and (min-width: 320px){
         width:100%;
         text-align:center;
         font-weight:bold; 
+        margin-top:50px;
     }
 `
 const H1 = styled.h1`
       @media only screen and (min-width: 1201px){
-        width: 100%;
         text-align: left;
-        margin-top: 70px;
         font-weight: bold;
-        margin-left: 40px;
-    }
+        margin:20px 40px 0 40px ;
+        margin-top: 35px;
+       }
     @media (max-width: 1200px) and (min-width: 1025px){
         width: 100%;
         text-align: left;
@@ -226,6 +230,7 @@ const AtividadesH3 = styled.h3`
     font-weight: bold;
     margin-left: 40px;
     margin-top: 20px;
+    text-align: center;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         font-weight: bold;
@@ -254,6 +259,7 @@ const AtividadesH3 = styled.h3`
 const PaiContainer = styled.div`
     max-width: 1200px;
     margin:0 auto;
+    padding: 20px;
 `
 
 
