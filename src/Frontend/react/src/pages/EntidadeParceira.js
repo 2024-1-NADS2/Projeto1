@@ -23,13 +23,6 @@ const EntidadesContainer = styled.div`
     } 
     `
     
-
-
-
-
-    
-    
-
 function EntidadeParceira(){
     return(
         <div>
