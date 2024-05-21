@@ -120,7 +120,7 @@ const Pe = styled.p`
     padding: 20px;
     text-align: justify;
     margin-right: 700px;
-    margin-left: 0px;
+    margin-left: px;
     margin-top: 0px;
     width: 100%;
        
@@ -257,10 +257,10 @@ const AtividadesH3 = styled.h3`
     
 `
 const PaiContainer = styled.div`
-    max-width: 1200px;
-    margin:100 auto;
-    padding: 20px;
+     padding: 20px;
     width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
    
 `
 

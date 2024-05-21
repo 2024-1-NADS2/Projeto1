@@ -186,6 +186,47 @@ const MapaContainer = styled.div`
         margin-top:20px;
 	}
 `
+const StyledIframe = styled.iframe`
+  @media only screen and (min-width: 1201px){
+     width: 500px;
+     height: 300px;
+    border: 0;
+     margin-top:0;  
+     border-radius:5px;  
+      }
+    @media (max-width: 1200px) and (min-width: 1025px){
+        width: 500px;
+        height: 300px;
+        border: 0;
+        margin-top:0;  
+    } 
+    @media (max-width: 1024px) and (min-width: 769px){
+        width: 500px;
+        height: 300px;
+        border: 0;
+        margin-top:0;  
+
+        } 
+    @media (max-width: 768px) and (min-width: 481px){
+        width: 500px;
+        height: 300px;
+        border: 0;
+        margin-top:0;
+        align-items: center;
+        text-align: center;
+        padding:20px;
+    } 
+    @media (max-width: 480px) and (min-width: 320px){
+        width: 350px;
+        height: 200px;
+        border: 0;
+        margin-top:0;
+        align-items: center;
+        text-align: center;
+        padding:20px;
+    } 
+ 
+`;
 
 
 
@@ -206,7 +247,7 @@ function LocaisColeta() {
             </DoacaoP>
 
             <MapaContainer>
-                <iframe
+                <StyledIframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.409686123078!2d-46.64561682422835!3d-23.55372517880513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59b25edcf751%3A0x65dc308b71d5fd05!2sR.%20Maj.%20Diogo%2C%20285%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001324-001!5e0!3m2!1spt-BR!2sbr!4v1715556526773!5m2!1spt-BR!2sbr"
                     width="500"
                     height="300"
@@ -215,7 +256,7 @@ function LocaisColeta() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     title="Mapa"
-                ></iframe>
+                ></StyledIframe>
             </MapaContainer>
             <hr />
             <br></br>
@@ -232,7 +273,7 @@ function LocaisColeta() {
             </DoacaoP>
 
             <MapaContainer>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.927748502918!2d-46.457261224229796!3d-23.4991117788427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616c465eb7db%3A0x44b596bf00cf8716!2sAv.%20S%C3%A3o%20Miguel%2C%208400%20-%20Vila%20Norma%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008070-001!5e0!3m2!1spt-BR!2sbr!4v1715559880550!5m2!1spt-BR!2sbr" width="500" height="300" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <StyledIframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.927748502918!2d-46.457261224229796!3d-23.4991117788427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce616c465eb7db%3A0x44b596bf00cf8716!2sAv.%20S%C3%A3o%20Miguel%2C%208400%20-%20Vila%20Norma%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008070-001!5e0!3m2!1spt-BR!2sbr!4v1715559880550!5m2!1spt-BR!2sbr" width="500" height="300" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></StyledIframe>
             </MapaContainer>
             <hr />
             <br></br>
@@ -251,7 +292,7 @@ function LocaisColeta() {
             </DoacaoP>
             
             <MapaContainer>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.530729037079!2d-46.65393082422748!3d-23.585291778783343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f32b5def55%3A0x2c1883032738d643!2sAv.%20Dr.%20Dante%20Pazzanese%2C%20500%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004012-180!5e0!3m2!1spt-BR!2sbr!4v1715912883752!5m2!1spt-BR!2sbr" width="500" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </MapaContainer>
+            <StyledIframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.530729037079!2d-46.65393082422748!3d-23.585291778783343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59f32b5def55%3A0x2c1883032738d643!2sAv.%20Dr.%20Dante%20Pazzanese%2C%20500%20-%20Vila%20Mariana%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004012-180!5e0!3m2!1spt-BR!2sbr!4v1715912883752!5m2!1spt-BR!2sbr" width="500" height="300" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></StyledIframe>            </MapaContainer>
 
         </DivContainer>
     )

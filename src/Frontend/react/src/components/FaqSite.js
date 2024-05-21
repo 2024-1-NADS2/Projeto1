@@ -149,11 +149,11 @@ function Faq(){
 
             <FaqH1> Dúvidas </FaqH1>
 
-            <FaqH4>Perguntas Frequentes</FaqH4>
+            <FaqH4>Dúvidas Frequentes</FaqH4>
 
             <Details>
              <Sumary>Como posso doar para uma Ong parceira?</Sumary>   
-               <P>Para se inscrever como doador, faça seu cadastro em poucos passos no nosso site.</P>
+               <P>Para se inscrever como doador, faça seu cadastro em poucos passos no nosso site.<br></br>Tendo o cadastro concluido, para fazer sua doação atraves do seu cupom fiscal, basta clicar no botao (DOE AGORA).<br></br>Faça seu login no site, após estar logado basta escolher a ONG que deseja fazer a doação, e encaminhar uma foto ou um escaner do cupom fiscal e clica em (ENVIAR).</P>
  
             </Details>
             <Details>
@@ -175,6 +175,16 @@ Por exemplo, se uma nota fiscal registra uma compra de R$ 100, e o ICMS aplicáv
 A porcentagem desse ICMS que é repassada para a ONG varia, mas geralmente está entre 5% a 30% do valor do ICMS.<br></br>
 Portanto, se a porcentagem de repasse for 20%, a ONG receberia R$ 2,40 por essa nota fiscal específica.</P>
 
+            </Details>
+
+            <Details>
+                <Sumary>Como se tornar uma ONG parceira?</Sumary>
+                <P>...</P>
+            </Details>
+
+            <Details>
+                <Sumary>Como a ONG pode se cadastrar para ter direito ao benefício?</Sumary>
+                <P>....</P>
             </Details>
 
         </FaqContainer>
