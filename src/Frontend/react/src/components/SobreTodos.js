@@ -19,18 +19,22 @@ const Container = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 20px;
 }
 
 @media (max-width: 768px) and (min-width: 481px){
     width: 100%;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 20px;
+    
 }
 
 @media (max-width: 480px) and (min-width: 320px){
     width: 100%;
     max-width: 1200px;
     margin: 100px auto;
+    padding: 20px;
 } 
 `
 
@@ -66,30 +70,30 @@ const Texto = styled.p`
 
 const Fotos = styled.div`
 @media only screen and (min-width: 1225px){
-    width: 300px;
+    width: 350px;
     padding: 0px;
     display: flex;
-    margin-left: 60px;
+    margin-left: 0px;
+    /* padding-right: 450px; */
    
 }
 
 @media (max-width: 1024px) and (min-width: 769px){
     width: 30px;
-    padding: 20px;
-    padding-right:70px;
-    /* padding-left:60px; */
+    padding: 0px;
+    padding-right: 300px;
 }
 
 @media (max-width: 768px) and (min-width: 481px){
     width: 30px;
-    padding: 20px;
-    padding-right:70px;
+    padding: 0px;
+    padding-right:270px;
 }
 
 @media (max-width: 480px) and (min-width: 320px){
     width: 30px;
-    padding: 20px;
-    padding-right:70px;
+    padding: 0px;
+    padding-right:290px;
 } 
 `
 
@@ -114,7 +118,9 @@ const Conteudo = styled.div`
 `
 const Icone = styled.ul`
     list-style-type: none; 
-    display: flex ; 
+    display: flex ;
+    column-gap: 10px;
+    padding-left:10px;  
 `
 
 const Linkd = styled.td`
