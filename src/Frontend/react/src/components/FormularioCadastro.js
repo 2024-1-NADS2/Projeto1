@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import React, { useState } from 'react';
 
 const FormularioContainer= styled.div`
     @media only screen and (min-width: 1201px){
@@ -90,43 +91,119 @@ const Texto = styled.div`
     }
 `
 
-function FormularioCadastro(){
-    return(
+function FormularioCadastro() {
+    const [nome, setNome] = useState('');
+    const [senha, setSenha] = useState('');
+    const [email, setEmail] = useState('');
+    const [telefone, setTelefone] = useState('');
+    const [tipoPessoa, setTipoPessoa] = useState('');
+    const [mensagem, setMensagem] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const usuario = {
+            nome,
+            senha,
+            email,
+            telefone,
+            tipo_pessoa: tipoPessoa === 'Pessoa Física' ? 0 : 1,
+        };
+
+        try {
+            const response = await fetch('https://localhost:7149/api/Criacao_Usuario', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(usuario),
+            });
+
+            if (!response.ok) {
+                const errorData = await response.json();
+                setMensagem(`Erro: ${errorData.message}`);
+                return;
+            }
+
+            const result = await response.json();
+            setMensagem(result);
+        } catch (error) {
+            setMensagem(`Erro na comunicação com o servidor: ${error.message}`);
+        }
+    };
+
+    return (
         <FormularioContainer>
             <Texto>
                 <a>Primeiro Acesso - Cadastrar Senha</a>
             </Texto>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Tipo de Pessoa</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Selecione uma opção</option>
-                        <option value="1">Pessoa Física</option>
-                        <option value="2">Pessoa Jurídica</option>
+            <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                    <label htmlFor="tipoPessoa" className="form-label">Tipo de Pessoa</label>
+                    <select
+                        className="form-select"
+                        aria-label="Default select example"
+                        value={tipoPessoa}
+                        onChange={(e) => setTipoPessoa(e.target.value)}
+                        required
+                    >
+                        <option value="" disabled>Selecione uma opção</option>
+                        <option value="Pessoa Física">Pessoa Física</option>
+                        <option value="Pessoa Jurídica">Pessoa Jurídica</option>
                     </select>
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Nome Completo</label>
-                    <input class="form-control" type="text"/>
+                <div className="mb-3">
+                    <label htmlFor="nome" className="form-label">Nome Completo</label>
+                    <input
+                        className="form-control"
+                        type="text"
+                        id="nome"
+                        value={nome}
+                        onChange={(e) => setNome(e.target.value)}
+                        required
+                    />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Telefone</label>
-                    <input class="form-control" type="text"/>
+                <div className="mb-3">
+                    <label htmlFor="telefone" className="form-label">Telefone</label>
+                    <input
+                        className="form-control"
+                        type="text"
+                        id="telefone"
+                        value={telefone}
+                        onChange={(e) => setTelefone(e.target.value)}
+                        required
+                    />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@examplo.com"/>
+                <div className="mb-3">
+                    <label htmlFor="email" className="form-label">E-mail</label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        id="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"/>
-                    <div id="passwordHelpBlock" class="form-text"> Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.</div>
+                <div className="mb-3">
+                    <label htmlFor="senha" className="form-label">Senha</label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="senha"
+                        value={senha}
+                        onChange={(e) => setSenha(e.target.value)}
+                        required
+                    />
+                    <div id="passwordHelpBlock" className="form-text">
+                        Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-danger">Concluir Cadastro</button>
+                <button type="submit" className="btn btn-danger">Concluir Cadastro</button>
             </form>
+            {mensagem && <p>{mensagem}</p>}
         </FormularioContainer>
     );
 }
-
 
 export default FormularioCadastro;

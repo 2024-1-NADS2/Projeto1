@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
 
-const FormularioContainer= styled.div`
+const FormularioContainer = styled.div`
     @media only screen and (min-width: 1201px){
         padding: 20px;
         font-family: Arial, Helvetica, sans-serif;
@@ -10,7 +10,7 @@ const FormularioContainer= styled.div`
         color: #000000;
         width: 400px;
         text-decoration: none;
-        p{
+        p {
             line-height: 1;
         }
     }
@@ -22,7 +22,7 @@ const FormularioContainer= styled.div`
         color: #000000;
         width: 400px;
         text-decoration: none;
-        p{
+        p {
             line-height: 1;
         }
     }
@@ -34,7 +34,7 @@ const FormularioContainer= styled.div`
         color: #000000;
         width: 400px;
         text-decoration: none;
-        p{
+        p {
             line-height: 1;
         }
     }
@@ -46,7 +46,7 @@ const FormularioContainer= styled.div`
         color: #000000;
         width: 400px;
         text-decoration: none;
-        p{
+        p {
             line-height: 1;
         }
     }
@@ -58,11 +58,12 @@ const FormularioContainer= styled.div`
         color: #000000;
         width: 400px;
         text-decoration: none;
-        p{
+        p {
             line-height: 1;
         }
     }
-`
+`;
+
 const Texto = styled.div`
     @media only screen and (min-width: 1201px){
         font-weight: bold;
@@ -89,29 +90,76 @@ const Texto = styled.div`
         font-size: 26px;
         padding-bottom: 20px;
     }
-`
+`;
 
-function FormularioRecuperarSenha(){
-    return(
+function FormularioRecuperarSenha() {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [mensagem, setMensagem] = useState('');
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const dados = { email, senha };
+
+        try {
+            const response = await fetch('https://localhost:7149/api/Recuperar_Senha', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(dados)
+            });
+
+            const result = await response.json();
+            if (response.ok) {
+                setMensagem('Senha redefinida com sucesso.');
+            } else {
+                setMensagem(result || 'Erro ao redefinir a senha.');
+            }
+        } catch (error) {
+            console.error('Erro:', error);
+            setMensagem('Ocorreu um erro ao redefinir a senha.');
+        }
+    };
+
+    return (
         <FormularioContainer>
             <Texto>
-                <a>Alterar Senha</a>
+                Alterar Senha
             </Texto>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+            <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label">E-mail</label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        required
+                    />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Nova Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"/>
-                    <div id="passwordHelpBlock" class="form-text"> Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.</div>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputPassword1" className="form-label">Nova Senha</label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="exampleInputPassword1"
+                        value={senha}
+                        onChange={(e) => setSenha(e.target.value)}
+                        pattern="(?=.*\d)(?=.*[a-zA-Z]).{8,20}"
+                        title="Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji."
+                        required
+                    />
+                    <div id="passwordHelpBlock" className="form-text"> Sua senha deve ter de 8 a 20 caracteres, conter letras e números e não deve conter espaços ou emoji.</div>
                 </div>
-                <button type="submit" class="btn btn-danger">Alterar</button>
+                <button type="submit" className="btn btn-danger">Alterar</button>
+                {mensagem && <div className="mt-3">{mensagem}</div>}
             </form>
         </FormularioContainer>
     );
 }
-
 
 export default FormularioRecuperarSenha;

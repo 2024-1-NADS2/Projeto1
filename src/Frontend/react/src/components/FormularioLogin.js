@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
@@ -125,28 +126,79 @@ const StyledLink = styled(Link)`
 `
 
 
-function FormularioLogin(){
-    return(
+function FormularioLogin() {
+    const [email, setEmail] = useState('');
+    const [senha, setSenha] = useState('');
+    const [message, setMessage] = useState('');
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+
+        const loginData = {
+            email: email,
+            senha: senha
+        };
+
+        try {
+            const response = await fetch('https://localhost:7149/api/Login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(loginData)
+            });
+
+            if (response.ok) {
+                const data = await response.text();
+                setMessage(data);
+            } else {
+                if (response.status === 401) {
+                    setMessage('Senha incorreta.');
+                } else if (response.status === 404) {
+                    setMessage('Usuário não encontrado.');
+                } else {
+                    setMessage('Erro no servidor.');
+                }
+            }
+        } catch (error) {
+            setMessage('Erro ao conectar com o servidor.');
+        }
+    };
+
+    return (
         <FormularioContainer>
             <Texto>
                 <a>Entrar / Criar conta</a>
             </Texto>
-            <form>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">E-mail</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+            <form onSubmit={handleSubmit}>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputEmail1" className="form-label">E-mail</label>
+                    <input
+                        type="email"
+                        className="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1"/>
+                <div className="mb-3">
+                    <label htmlFor="exampleInputPassword1" className="form-label">Senha</label>
+                    <input
+                        type="password"
+                        className="form-control"
+                        id="exampleInputPassword1"
+                        value={senha}
+                        onChange={(e) => setSenha(e.target.value)}
+                    />
                 </div>
                 <p><StyledLink to="/recuperarsenha">Esqueci a Senha</StyledLink></p>
                 <p><StyledLink to="/cadastro">Ainda não sou Doador</StyledLink></p>
-                <button type="submit" class="btn btn-danger">Acessar</button>
+                <button type="submit" className="btn btn-danger">Acessar</button>
+                {message && <p>{message}</p>}
             </form>
         </FormularioContainer>
     );
 }
-
 
 export default FormularioLogin;
