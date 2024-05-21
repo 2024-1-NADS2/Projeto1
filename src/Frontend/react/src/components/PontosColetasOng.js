@@ -13,6 +13,7 @@ const Coletah1 = styled.h1`
     margin-top: 20px;
     font-weight: bold;
     margin-left: 20px;
+    
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         text-align: left;
@@ -45,6 +46,7 @@ const LogoMulheresUni = styled.img`
     padding:10px;
     width: 300px;
     margin-left: 50px;
+    
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         padding:10px;
@@ -69,6 +71,9 @@ const LogoMulheresUni = styled.img`
 `
 const DivContainer = styled.div`
     padding:20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
 `
 const MulheresP = styled.p`
 @media only screen and (min-width: 1201px){

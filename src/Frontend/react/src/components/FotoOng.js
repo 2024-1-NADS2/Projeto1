@@ -258,8 +258,10 @@ const AtividadesH3 = styled.h3`
 `
 const PaiContainer = styled.div`
     max-width: 1200px;
-    margin:0 auto;
+    margin:100 auto;
     padding: 20px;
+    width: 100%;
+   
 `
 
 
