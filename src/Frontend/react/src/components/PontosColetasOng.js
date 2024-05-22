@@ -193,37 +193,56 @@ const StyledIframe = styled.iframe`
     border: 0;
      margin-top:0;  
      border-radius:5px;  
+     margin-right: 20px;
+     padding:20px;
+
       }
     @media (max-width: 1200px) and (min-width: 1025px){
         width: 500px;
         height: 300px;
         border: 0;
         margin-top:0;  
+        margin-right: 20px;
+        padding:20px;
+
+
+
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         width: 500px;
         height: 300px;
         border: 0;
         margin-top:0;  
+        margin-right:20px;
+        padding:20px;
+
+
 
         } 
     @media (max-width: 768px) and (min-width: 481px){
-        width: 500px;
+        width: 450px;
         height: 300px;
         border: 0;
         margin-top:0;
         align-items: center;
         text-align: center;
+        margin-right: 20px;
         padding:20px;
+
+
     } 
     @media (max-width: 480px) and (min-width: 320px){
-        width: 350px;
+        width: 320px;
         height: 200px;
         border: 0;
         margin-top:0;
         align-items: center;
         text-align: center;
+        margin-right: 22px;
         padding:20px;
+
+
+
     } 
  
 `;

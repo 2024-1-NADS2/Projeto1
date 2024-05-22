@@ -193,33 +193,33 @@ const H3 = styled.h3`
 `
 const H1 = styled.h1`
       @media only screen and (min-width: 1201px){
-        text-align: left;
+        text-align: center;
         font-weight: bold;
         margin:20px 40px 0 40px ;
         margin-top: 35px;
        }
     @media (max-width: 1200px) and (min-width: 1025px){
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
         font-weight: bold;
         margin-left: 40px;
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         width: 100%;
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
         font-weight: bold;
         margin-left: 40px;
         } 
     @media (max-width: 768px) and (min-width: 481px){
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
         font-weight: bold;
         margin-left: 40px;
         } 
     @media (max-width: 480px) and (min-width: 320px){
-        text-align: left;
+        text-align: center;
         margin-top: 20px;
         font-weight: bold;
         margin-left: 40px;

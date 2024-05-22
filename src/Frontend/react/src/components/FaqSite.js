@@ -16,6 +16,7 @@ const FaqH1 = styled.h1`
     align-items: center;
     font-weight: bold;
     text-align:center;
+    
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         align-items: center;
@@ -97,22 +98,31 @@ const Details = styled.details`
   @media only screen and (min-width: 1201px){
         padding:10PX;
         text-align: justify;width: 100%;
+        margin-top: 40px;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         padding:10PX;
         text-align: justify;
+        margin-top: 40px;
+
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         padding:10PX;
         text-align: justify;
+        margin-top: 40px;
+
     } 
     @media (max-width: 768px) and (min-width: 481px){
         padding:10PX;
         text-align: justify;
+        margin-top: 40px;
+
     } 
     @media (max-width: 480px) and (min-width: 320px){
         padding:10PX;
         text-align: justify;
+        margin-top: 40px;
+
     } 
     
 `
@@ -138,6 +148,9 @@ const P = styled.p`
         text-align: justify;
     } 
 `
+const Span = styled.span`
+    font-weight: bold;
+`
 
 
 
@@ -147,18 +160,29 @@ function Faq(){
 
         <FaqContainer>  
 
-            <FaqH1> Dúvidas </FaqH1>
+            <FaqH1> Dúvidas Frequentes </FaqH1>
 
-            <FaqH4>Dúvidas Frequentes</FaqH4>
 
             <Details>
              <Sumary>Como posso doar para uma Ong parceira?</Sumary>   
-               <P>Para se inscrever como doador, faça seu cadastro em poucos passos no nosso site.<br></br>Tendo o cadastro concluido, para fazer sua doação atraves do seu cupom fiscal, basta clicar no botao (DOE AGORA).<br></br>Faça seu login no site, após estar logado basta escolher a ONG que deseja fazer a doação, e encaminhar uma foto ou um escaner do cupom fiscal e clica em (ENVIAR).</P>
+               <P>Acesse o nosso site.<br></br>
+Clique na opção "DOE AGORA".<br></br>
+Clique em "Ainda não sou doador".<br></br>
+Preencha o formulário com seus dados pessoais.<br></br>
+Envie o formulário para completar seu cadastro.<br></br>
+Após ter concluído o cadastro Faça o login no site usando suas credenciais.<br></br>
+Escolha a ONG para a qual deseja fazer a doação.<br></br>
+Encaminhe uma foto ou um escaneamento do seu cupom fiscal.<br></br>
+Clique no botão "ENVIAR" para finalizar a doação.</P>
  
             </Details>
             <Details>
             <Sumary>Como posso adicionar minha nota fiscal?</Sumary>
-                <P>Escanei a sua nota fiscal ou tire uma foto, em seguida faça o upload da foto no site e clique em enviar.</P>
+                <P>Utilize um scanner para digitalizar a nota fiscal ou a câmera do seu smartphone para tirar uma foto clara e legível da nota fiscal.<br></br>
+                Acesse o nosso site e faça login com suas credenciais.<br></br>
+Navegue até a seção de doações ou a área específica para enviar a nota fiscal.<br></br>
+Clique no botão "Escolher arquivo" ou "Selecionar arquivo".<br></br>
+Encontre e selecione a foto ou o arquivo escaneado da sua nota fiscal no seu dispositivo.</P>
             </Details>
 
             <Details>
@@ -179,12 +203,33 @@ Portanto, se a porcentagem de repasse for 20%, a ONG receberia R$ 2,40 por essa 
 
             <Details>
                 <Sumary>Como se tornar uma ONG parceira?</Sumary>
-                <P>...</P>
+                <P>Reúna as seguintes informações e documentos:<br></br>
+                    Razão Social <br></br>
+                    CNPJ <br></br>
+                    Telefone para contato<br></br>
+                    E-mail para contato<br></br>
+                    Estatuto Social da ONG (documento oficial)<br></br>
+                    Abra seu email.<br></br>
+                Crie uma nova mensagem de e-mail.<br></br> 
+                No campo "Para", insira o endereço de e-mail de nossa equipe - <Span>contato.doamais@hotmail.com</Span><br></br>
+                No corpo do e-mail, inclua as seguintes informações:<br></br>
+                Razão Social da ONG<br></br>
+                CNPJ da ONG<br></br>
+                Telefone para contato<br></br>
+                E-mail para contato<br></br>
+                Clique no ícone de anexar arquivo (geralmente representado por um clipe de papel).<br></br>
+                Selecione o arquivo do Estatuto Social da ONG do seu computador e anexe-o ao e-mail.<br></br>
+                Nossa equipe revisará sua solicitação e entrará em contato através do e-mail fornecido para confirmar a parceria ou solicitar informações adicionais, se necessário.</P>
             </Details>
 
             <Details>
                 <Sumary>Como a ONG pode se cadastrar para ter direito ao benefício?</Sumary>
-                <P>....</P>
+                <P>Acesse o site da Nota Fiscal Paulista <Span>https://www.nfp.fazenda.sp.gov.br</Span><br></br>
+                Faça login com seu CNPJ e senha.<br></br>
+                Caso não tenha cadastro crie um para poder ter acesso.<br></br>
+                Preencha o formulário de adesão ao programa.<br></br>
+                Envie os documentos solicitados, como o estatuto social e o comprovante de inscrição no CNPJ.<br></br>
+                Aguarde a aprovação e o cadastro da ONG no programa.</P>
             </Details>
 
         </FaqContainer>
