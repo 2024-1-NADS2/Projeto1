@@ -48,7 +48,7 @@ const FooterContainer = styled.div`
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin: 0;
-        width: 100%;
+        width:100%;
     }
 `
 const Logo = styled.div`

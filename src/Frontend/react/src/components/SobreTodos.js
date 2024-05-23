@@ -44,26 +44,26 @@ const Titulo = styled.h1`
 const Texto = styled.p`
  @media only screen and (min-width: 1225px){
     text-align: justify;  
-    padding: 20px 20px 20px 91px;
+    padding: 20px 20px 20px 0px;
     column-count:0 ;
     flex-direction: column;
 }
 
 @media (max-width: 1024px) and (min-width: 769px){
     text-align: justify;  
-    padding: 20px 20px 20px 91px;
+    padding: 20px 20px 20px 0px;
     column-count: 0;
 }
 
 @media (max-width: 768px) and (min-width: 481px){
     text-align: justify;  
-    padding: 20px 20px 20px 91px;
+    padding: 20px 20px 20px 0px;
     column-count: 0;
 }
 
 @media (max-width: 480px) and (min-width: 320px){
     text-align: justify;  
-    padding: 20px 20px 20px 91px;
+    padding: 20px 20px 20px 0px;
     column-count: 0;
 }       
 `
@@ -74,7 +74,7 @@ const Fotos = styled.div`
     padding: 0px;
     display: flex;
     margin-left: 0px;
-    /* padding-right: 450px; */
+    padding-right: 450px;
    
 }
 
