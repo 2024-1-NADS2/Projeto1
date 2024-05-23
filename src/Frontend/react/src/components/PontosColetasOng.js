@@ -243,7 +243,8 @@ function LocaisColeta() {
             <MulheresP>Telefone: (11) 3101-0336</MulheresP>
             <MulheresP>Email: MulheresUnidas@Ong.com.br</MulheresP>
             <DoacaoP>
-                A ONG Mulheres Unidas Venceremos tem uma abordagem diversificada para captar recursos, incluindo a realização de bazares e a recepção de doações de diversos tipos de itens.Entre as doações recebidas estão materiais para artesanato, roupas, calçados e alimentos não perecíveis. Esses itens são fundamentais para apoiar as atividades da organização e beneficiar a comunidade atendida.a ONG está aberta a parcerias, colaborações e iniciativas criativas de captação de recursos. Essa busca por apoio é fundamental para garantir o sucesso contínuo das atividades da organização e a realização de seus objetivos de impactar positivamente a comunidade e promover o desenvolvimento social.
+            A ONG Mulheres Unidas Venceremos se destaca por sua abordagem diversificada na captação de recursos, promovendo ações como bazares e recebendo doações de variados itens. Entre os itens doados, encontram-se materiais para artesanato, roupas, calçados e alimentos não perecíveis. Essas doações são essenciais para o funcionamento da organização e o bem-estar da comunidade assistida.
+            <br></br>Acreditando no poder da união, a ONG busca parcerias, colaborações e iniciativas criativas de captação de recursos. Essa busca por apoio é crucial para garantir a continuidade de suas atividades e a realização de seus objetivos: causar um impacto positivo na comunidade e promover o desenvolvimento social.
             </DoacaoP>
 
             <MapaContainer>
@@ -267,9 +268,8 @@ function LocaisColeta() {
             <MulheresP>Telefone: (11) 4003-2299</MulheresP>
             <MulheresP>Email: doacoes@exercitodoacoes.org.br</MulheresP>
             <DoacaoP>
-                Levar sua doação para um ponto de coleta ou uma Caixa do Bem, que são locais seguros e práticos para depositar sua doação.<br></br>O que eu posso doar?
-                Roupas, Móveis em bom estado, Brinquedos, Eletrodomésticos, Eletrônicos, Livros, Utensílios, Itens de Informática e muito mais.
-                A coleta é feita por uma equipe uniformizada na data agendada. Entramos em contato para informar sobre a proximidade e imprevistos.
+                Contribuir com o bem-estar do próximo é um gesto nobre e transformador. Através da doação, você tem a oportunidade de fazer a diferença na vida de quem mais precisa, seja através de roupas em bom estado, móveis que ainda podem ser utilizados, brinquedos que trarão alegria às crianças, eletrodomésticos que facilitarão o dia a dia, eletrônicos que conectarão pessoas, livros que abrirão novos horizontes, utensílios que auxiliarão nas tarefas domésticas, itens de informática que ampliarão o acesso à informação ou muito mais!
+                <br></br>Para facilitar o processo de doação, o Exercito de Salvação conta com Pontos de Coleta e Caixas do Bem, locais seguros e práticos que garantem o destino correto das suas doações. A coleta é realizada por uma equipe uniformizada na data agendada, previamente informada através de contato telefônico, para garantir a sua tranquilidade e evitar imprevistos.
             </DoacaoP>
 
             <MapaContainer>
@@ -288,7 +288,8 @@ function LocaisColeta() {
             <MulheresP>Telefone: (11) 4573-7800</MulheresP>
             <MulheresP>Email: ouvidoria@prosangue.sp.gov.br</MulheresP>
             <DoacaoP>
-            O hemocentro desempenha um papel crucial na saúde pública, sendo responsável pela coleta de aproximadamente 40.000 doações de sangue por ano.<br></br> Além disso, realiza o registro e exames necessários para identificar doadores compatíveis de medula óssea, contribuindo significativamente para tratamentos que salvam vidas.<br></br> O hemocentro também se encarrega do fracionamento, distribuição e transfusão de hemocomponentes, assegurando que todos os pacientes em sua região de abrangência recebam o suporte necessário.<br></br> Anualmente, isso se traduz em cerca de 65.000 transfusões, fundamentais para o tratamento de diversas condições médicas, desde cirurgias e emergências até terapias para doenças crônicas.
+                O hemocentro desempenha um papel crucial na saúde pública, sendo responsável pela coleta de aproximadamente 40.000 doações de sangue por ano.
+                <br></br> Além disso, realiza o registro e exames necessários para identificar doadores compatíveis de medula óssea, contribuindo significativamente para tratamentos que salvam vidas.<br></br> O hemocentro também se encarrega do fracionamento, distribuição e transfusão de hemocomponentes, assegurando que todos os pacientes em sua região de abrangência recebam o suporte necessário.<br></br> Anualmente, isso se traduz em cerca de 65.000 transfusões, fundamentais para o tratamento de diversas condições médicas, desde cirurgias e emergências até terapias para doenças crônicas.
             </DoacaoP>
             
             <MapaContainer>

@@ -31,7 +31,6 @@ function EntidadeParceira(){
             <FotoOng />
             <Footer/>
             </EntidadesContainer>
-
         </div>
         
     );

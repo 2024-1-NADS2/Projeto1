@@ -52,9 +52,25 @@ function Funciona() {
             <Titulo> <strong>A doação funciona assim </strong> </Titulo>
             <hr />
             <Texto>
-                Ao entrar em nosso site você poderá conhece todas as nossas Ongs parceiras e o objetivo do site é unir pessoas querendo doar a ongs precisando de doações e está e o nosso meio de ajudar ambas as partes é direcionar o seu cupom fiscal<strong> “SEM CPF”</strong> para a ong parceira da sua escolha que   por sua vez fará o pedido junto a prefeitura do imposto retido.<br></br>
-                Para isso deverá se cadastrar em nosso site indicar a ONG que irá receber seu cupom fiscal.<br></br>
-                Caso você possa ajudar mais entrar em contato com elas para efetuar doações diretas como (Roupas, alimentos, mão de obra, Ração, professor, Valores). Roupa de todos os tamanhos em situação de  uso, alimentos de preferência não perecíveis mas em caso de perecíveis deixar claro a data de vencimento para que eles possam direcionar rapidamente as pessoas conforme a necessidade, mão de obra; se você é profissional da Saúde/Advogado/Contador entre outros com disponibilidade de atendimento pró Bono entre em contato pelos meios indicados pelo site, rações; em caso ong de animais você poderá efetuar essa doação ou qualquer outro itens que possa ajudá-los no dia dos pet friend’s, Professores de qualquer área profissionalizante você pode dar um novo sentido a vidas dessas pessoas em caso valores pelos mesmos métodos de contato receberá todas as informações e poderá acompanhar o destino da sua doação.
+                <strong>Junte-se a nós e faça a diferença!</strong>
+                <br></br>
+                <br></br>Ao visitar nosso site, você terá a oportunidade de conhecer todas as ONGs parceiras e o nosso propósito: conectar pessoas dispostas a doar com ONGs que precisam de doações. Através da plataforma, você direciona seu cupom fiscal <strong>"SEM CPF"</strong> para a ONG de sua escolha, que, por sua vez, solicitará o valor retido à prefeitura.
+                <br></br>
+                <br></br><strong>Para doar seu cupom fiscal:</strong>
+                <br></br>
+                <br></br>1.	Cadastre-se em nosso site;
+                <br></br>2.	Indique a ONG que receberá sua doação.
+                <br></br>
+                <br></br><strong>Quer ajudar ainda mais?</strong>
+                <br></br>
+                <br></br>Entre em contato direto com as ONGs para realizar doações de:
+                <br></br><strong>Roupas:</strong> de todos os tamanhos, em bom estado;
+                <br></br><strong>Alimentos:</strong> não perecíveis preferencialmente, mas em caso de perecíveis, informe a data de validade para que a distribuição seja feita de forma ágil e adequada à necessidade;
+                <br></br><strong>Mão de obra:</strong> se você é profissional da saúde, advogado, contador ou de outra área e possui disponibilidade para atender pro bono, entre em contato pelos canais disponíveis no site;
+                <br></br><strong>Ração:</strong> para ONGs de animais, você pode doar ração ou qualquer outro item que auxilie na causa;
+                <br></br><strong>Valores:</strong> faça sua doação em dinheiro pelos mesmos métodos de contato e acompanhe o destino da sua contribuição.
+                <br></br> 
+                <br></br><strong>Juntos, podemos construir um futuro melhor para todos!</strong>
             </Texto>
 
         </Container>

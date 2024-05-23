@@ -274,24 +274,41 @@ function ImagensOng() {
                 <H3>História da Ong</H3>
                 <hr />
                 <Pe>
-                     A Associação de Mulheres Unidas Venceremos (AMUV) é uma organização não governamental com sede na Rua Major Diogo, número 285, no bairro Bela Vista, São Paulo.<br></br> Fundada em 1992, a AMUV tem como objetivo principal oferecer apoio e assistência a diversos grupos vulneráveis, com foco especial nas mulheres.<br></br>A frente da associação é liderada por Romilda, Maria José, Inês e Tati, que são responsáveis da ONG e pela organização das redes sociais.<br></br> Embora seja frequentada principalmente por mulheres, a AMUV está abrindo suas portas para cadastrar homens também, visando a inclusão e o apoio mútuo.<br></br>Apesar de todas as atividades positivas, a ONG enfrenta desafios como o limite de cadastros devido à falta de recursos suficientes.<br></br> No entanto, eles fazem o possível para atender ao maior número possível de pessoas.
-
+                    A Associação de Mulheres Unidas Venceremos (AMUV) é uma organização não governamental sediada na Rua Major Diogo, número 285, no bairro Bela Vista, em São Paulo.
+                    <br></br>Fundada em 1992, a AMUV tem como objetivo principal oferecer apoio e assistência a diversos grupos vulneráveis, com foco especial em mulheres.
+                    <br></br>A liderança da associação está a cargo de Romilda, Maria José, Inês e Tati, que são responsáveis pela gestão da ONG e pela organização das redes sociais.
+                    <br></br>Embora tenha como público-alvo principal as mulheres, a AMUV está abrindo suas portas para o cadastro de homens também, visando a inclusão e o apoio mútuo.
+                    <br></br>Apesar de todas as atividades positivas, a ONG enfrenta desafios como o limite de cadastros devido à falta de recursos financeiros.
+                    <br></br>Mesmo assim, a equipe da AMUV se dedica ao máximo para atender ao maior número possível de pessoas.
                 </Pe>
                 <Doacao src={UnidasVenceremos} alt="Foto Mulheres Unidas Venceremos" />
 
                 <AtividadesH3>Principais Atividades</AtividadesH3>
                 <hr />
-                <Pe>Uma das principais atividades da ONG é fornecer cestas básicas, roupas e calçados para pessoas em situação de vulnerabilidade, incluindo aqueles que vivem nas ruas.<br></br>Além disso, a associação encaminha mulheres que sofrem qualquer tipo de agressão para ONGs parceiras especializadas em violência de gênero.<br></br>Durante datas comemorativas, como a Páscoa e o Dia das Crianças, a ONG realiza ações especiais, como a entrega de ovos de Páscoa e brinquedos para as crianças atendidas pela associação.<br></br>A organização também oferece aulas de artesanato, teatro e inglês ministradas por voluntários.<br></br> O prédio utilizado foi cedido pelo sindicato local, demonstrando uma colaboração importante da comunidade.
-</Pe>
+                <Pe>
+                    Uma das principais atividades da ONG é a doação de cestas básicas, roupas e calçados para pessoas em situação de vulnerabilidade, incluindo aquelas que vivem em situação de rua.
+                    <br></br>Ademais, a entidade encaminha mulheres vítimas de qualquer tipo de agressão para ONGs parceiras especializadas em violência contra a mulher.
+                    <br></br>Em datas comemorativas como Páscoa e Dia das Crianças, a ONG promove ações especiais, como a entrega de ovos de Páscoa e brinquedos para as crianças atendidas.
+                    <br></br>A organização também oferece cursos de artesanato, teatro e inglês ministrados por voluntários.
+                    <br></br>O prédio utilizado foi cedido pelo sindicato local, demonstrando um importante compromisso da comunidade com a causa.
+                </Pe>
             <Doacao src={DoacaoOng} alt="Foto Doações Ong" />
             <AtividadesH3>Horta Dona Denuza</AtividadesH3>
             <hr />
-            <Pe>A Horta Dona Denuza é um dos projetos mais cativantes que merecem ser destacados.<br></br> Esta horta comunitária não só proporciona uma diversidade incrível de ervas, frutas e temperos frescos, mas também desempenha um papel fundamental ao fomentar hábitos alimentares mais saudáveis na comunidade.<br></br> No entanto, sua importância vai além disso, pois serve como um ambiente propício para a realização de palestras educativas sobre plantas, seus benefícios e diversas formas de utilização.<br></br> Essa iniciativa não apenas enriquece a qualidade de vida dos participantes, mas também fortalece os laços comunitários e promove a conscientização ambiental e sustentável.</Pe>
+                <Pe>
+                    A Horta Dona Denuza é um dos projetos mais inspiradores que merece destaque.
+                    <br></br>Esta horta comunitária oferece uma grande variedade de hortaliças, frutas e ervas frescas, além de desempenhar um papel crucial na promoção de hábitos alimentares mais saudáveis na comunidade.
+                    <br></br>No entanto, sua importância vai além disso, pois oferece um espaço propício para a realização de palestras educativas sobre plantas, seus benefícios e usos variados. Essa iniciativa vai além de melhorar a qualidade de vida dos participantes, e também contribui para o fortalecimento dos laços comunitários e para a conscientização ambiental.
+                </Pe>
             <Doacao src={HortaOng} alt ="Horta Dona Denuza" />
 
             <AtividadesH3>Captação de Recursos</AtividadesH3>
             <hr />
-            <Pe>A Associação de Mulheres Unidas Venceremos é um exemplo inspirador de solidariedade e compromisso comunitário, mostrando como pequenas ações podem ter um grande impacto na vida das pessoas mais necessitadas.<br></br>A ONG busca captar recursos por meio de bazares e doações de materiais para artesanato, roupas, calçados e alimentos não perecíveis.<br></br>No entanto, enfrenta desafios na captação de recursos para expandir suas atividades, incluindo a implementação de aulas de costura no futuro.<br></br> Essa expansão é vista como uma oportunidade valiosa para oferecer novas habilidades à comunidade atendida pela ONG, contribuindo para o desenvolvimento pessoal e profissional dos participantes.<br></br> Apesar das dificuldades enfrentadas, a organização está comprometida em buscar alternativas criativas e sustentáveis para garantir o sucesso de seus projetos e a continuidade de seu impacto positivo na comunidade.</Pe>
+                <Pe>
+                    A associação se destaca como um exemplo inspirador de solidariedade e compromisso com o bem-estar da comunidade. Através de ações simples, porém significativas, a organização demonstra o poder transformador da união e do trabalho em equipe para impactar positivamente a vida das pessoas mais necessitadas.
+                    <br></br>Atingindo seus objetivos por meio da realização de bazares e da recepção de doações de materiais para artesanato, roupas, calçados e alimentos não perecíveis, a ONG enfrenta, no entanto, desafios na captação de recursos para a expansão de suas atividades. Entre os planos futuros da organização, está a implementação de aulas de costura, uma iniciativa vista como uma oportunidade valiosa para oferecer novas habilidades à comunidade atendida, promovendo o desenvolvimento pessoal e profissional dos participantes.
+                    <br></br>Mesmo diante das dificuldades encontradas, a Associação de Mulheres Unidas Venceremos permanece firme em sua missão, buscando alternativas criativas e sustentáveis para garantir o sucesso de seus projetos e a continuidade de seu impacto positivo na comunidade. A organização demonstra resiliência e compromisso inabalável com a transformação social, inspirando admiração e servindo como um farol de esperança para aqueles que mais precisam.
+                </Pe>
             <Doacao src={LogoUnidasVenceremos} alt = "Logo Mulheres Unidas" />
 
 

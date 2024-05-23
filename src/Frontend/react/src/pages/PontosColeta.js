@@ -30,7 +30,6 @@ function PontosColeta(){
         <Coletas>
             <Header/>
             <LocaisColeta />
-            
             <Footer/>
         </Coletas>
     );

@@ -7,9 +7,7 @@ function ComoFunciona(){
     return(
         <div>
             <Header/>
-
             <Funciona/>
-
             <Footer/>
         </div>
     );
