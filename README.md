@@ -49,10 +49,10 @@ Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Si
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<p href="https://nodejs.org/en">Node.js</p>
--<p href="https://nodejs.org/en](https://www.mysql.com/">MySQL Workbench</p>
--<p href="https://code.visualstudio.com/">Visual Studio Code</p>
--<p href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</p>
+<p>-<a href="https://nodejs.org/en">Node.js</a></p>
+<p>-<a href="https://nodejs.org/en](https://www.mysql.com/">MySQL Workbench</a></p>
+-<a href="https://code.visualstudio.com/">Visual Studio Code</a>
+-<a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a>
 
 <P>Para executar o projeto abra o local Documentos\GitHub\Projeto1\src\Frontend no Visual Studio Code e execute o comando abaixo:</P>
 
