@@ -1,4 +1,0 @@
-Server name: doamaisbd
-Admin username: doamaisadmin
-Password: ChargeBack2nads
-Server: doamaisbd.mysql.database.azure.com
