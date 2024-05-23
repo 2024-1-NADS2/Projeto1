@@ -54,7 +54,7 @@ Para abrir este projeto você necessita das seguintes ferramentas:
 <p>-<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
 <p>-<a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a></p>
 
-<P>Para executar o projeto abra o local Documentos\GitHub\Projeto1\src\Frontend no Visual Studio Code e execute o comando abaixo:</P>
+<P>Para executar o projeto abra o local Documentos\GitHub\Projeto1\src\Frontend no Visual Studio Code e execute o comando abaixo no terminal:</P>
 
 ```sh
 cd react
