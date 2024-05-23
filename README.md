@@ -36,11 +36,11 @@ Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Si
 |-->imagens<br>
 |-->src<br>
   &emsp;|-->Backend<br>
-  &emsp;|-->Banco_de_dados<br>
-    &emsp;&emsp;|der_banco_de_dados.png<br>
-    &emsp;&emsp;|der_banco_de_dados.drawio<br>
-    &emsp;&emsp;|script_banco_de_dados.sql<br>
-  &emsp;|-->Servidor_Doamais_Oficial<br>
+    &emsp;&emsp;|-->Banco_de_dados<br>
+      &emsp;&emsp;&emsp;|der_banco_de_dados.png<br>
+      &emsp;&emsp;&emsp;|der_banco_de_dados.drawio<br>
+      &emsp;&emsp;&emsp;|script_banco_de_dados.sql<br>
+    &emsp;&emsp;|-->Servidor_Doamais_Oficial<br>
   &emsp;|-->Frontend<br>
     &emsp;&emsp;|-->react<br>
 |readme.md<br>
