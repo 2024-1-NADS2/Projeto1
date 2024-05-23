@@ -147,7 +147,7 @@ const DoacaoP = styled.p`
         margin-left: 20px;
         font-family:Arial, Helvetica, sans-serif;
         margin-right: 20px;
-        width: 100%;
+        width: 90%;
 	}
 
 `
@@ -220,7 +220,7 @@ const StyledIframe = styled.iframe`
 
         } 
     @media (max-width: 768px) and (min-width: 481px){
-        width: 450px;
+        width: 430px;
         height: 300px;
         border: 0;
         margin-top:0;
@@ -232,7 +232,7 @@ const StyledIframe = styled.iframe`
 
     } 
     @media (max-width: 480px) and (min-width: 320px){
-        width: 320px;
+        width: 280px;
         height: 200px;
         border: 0;
         margin-top:0;

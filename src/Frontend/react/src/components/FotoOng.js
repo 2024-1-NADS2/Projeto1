@@ -12,27 +12,29 @@ const Doacao = styled.img`
         height: 200px;
         align-items: center;
         text-align: center;
-        margin-left: 380px;
+        margin-left: 350px;
+        display: block;
+        margin: 20px auto;
+        
         
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         border-radius: 10px;
-        text-align: right;
-        align-items: right;
-        width: 350px;
-        height: 200px;
-        margin-top: -330px;
+        width: 280px;
+        height: 150px;
+        margin-top: -350px;
         margin-left: 700px; 
+        margin-right:0px;
+
+        
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         border-radius: 10px;
-        text-align: right;
-        align-items: right;
-        width: 70%;
-        height: 250px;
-        margin-left:100px;
-        margin-right: 200px;
+        width: 430px;
+        height: 220px;
         display: block;
+        margin:20px auto;
+        
      } 
     @media (max-width: 768px) and (min-width: 481px){
         width: 450px;
@@ -50,77 +52,12 @@ const Doacao = styled.img`
   
 
 `
-
-const Logo = styled.img`
-    @media only screen and (min-width: 1201px){
-        align-items: right;
-        text-align: center;
-        margin-left: 880px;
-        margin-top: -420px;
-        width: 300px;
-    }
-    @media (max-width: 1200px) and (min-width: 1025px){
-    } 
-    @media (max-width: 1024px) and (min-width: 769px){
-    } 
-    @media (max-width: 768px) and (min-width: 481px){
-    } 
-    @media (max-width: 480px) and (min-width: 320px){
-
-    }
-`
-
-
-const ImgOng = styled.img`
-    @media only screen and (min-width: 1201px){
-        border-radius: 10px;
-        width: 400px;
-        height: 200px;
-        align-items: right;
-        text-align: center;
-        margin-left: 750px;
-        margin-top: -400px;
-        }
-    @media (max-width: 1200px) and (min-width: 1025px){
-        border-radius: 10px;
-        width: 350px;
-        height: 200px;
-        align-items: right;
-        text-align: center;
-        margin-left: 750px;
-        margin-top: -450px;    
-    } 
-    @media (max-width: 1024px) and (min-width: 769px){
-        border-radius: 10px;
-        width: 350px;
-        height: 200px;
-        align-items: right;
-        text-align: center;
-        margin-left: 650px;
-        margin-top: -500px;    
-        } 
-    @media (max-width: 768px) and (min-width: 481px){
-        width: 450px;
-        border-radius: 10px;
-        height: 250px;
-        margin-left: 35px;
-        margin: 20px auto;
-        display:block;
-    } 
-    @media (max-width: 480px) and (min-width: 320px){
-        width: 80%;
-        border-radius: 10px;
-        margin-left:20px;
-    }    
-`
 const Pe = styled.p`
 @media only screen and (min-width: 1201px){
     font-family:Arial, Helvetica, sans-serif;
     column-count: 2;
     padding: 20px;
     text-align: justify;
-    margin-right: 700px;
-    margin-left: px;
     margin-top: 0px;
     width: 100%;
        
@@ -197,6 +134,7 @@ const H1 = styled.h1`
         font-weight: bold;
         margin:20px 40px 0 40px ;
         margin-top: 35px;
+        padding:20px;
        }
     @media (max-width: 1200px) and (min-width: 1025px){
         width: 100%;
@@ -263,6 +201,7 @@ const PaiContainer = styled.div`
     margin: 100px auto;
    
 `
+
 
 
 function ImagensOng() {

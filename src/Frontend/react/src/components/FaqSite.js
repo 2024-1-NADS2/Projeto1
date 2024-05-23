@@ -99,29 +99,65 @@ const Details = styled.details`
         padding:10PX;
         text-align: justify;width: 100%;
         margin-top: 40px;
-    }
+        background-color:#fff;
+        border-radius:10px;
+        max-width: 50%;  
+        box-shadow: 10px 10px 5px  grey;      
+        &:not([open]) {
+    background-color: #fff;
+        }
+     
+}
     @media (max-width: 1200px) and (min-width: 1025px){
         padding:10PX;
         text-align: justify;
         margin-top: 40px;
+        background-color:#fff;
+        border-radius:10px;
+        max-width: 50%;  
+        box-shadow: 10px 10px 5px  grey;      
+        &:not([open]) {
+    background-color: #fff;
+        }
 
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         padding:10PX;
         text-align: justify;
         margin-top: 40px;
+        background-color:#fff;
+        border-radius:10px;
+        max-width: 60%;  
+        box-shadow: 10px 10px 5px  grey;      
+        &:not([open]) {
+    background-color: #fff;
+        }
 
     } 
     @media (max-width: 768px) and (min-width: 481px){
         padding:10PX;
         text-align: justify;
         margin-top: 40px;
+        background-color:#fff;
+        border-radius:10px;
+        max-width: 70%;  
+        box-shadow: 10px 10px 5px  grey;      
+        &:not([open]) {
+    background-color: #fff;
+        }
 
     } 
     @media (max-width: 480px) and (min-width: 320px){
         padding:10PX;
         text-align: justify;
         margin-top: 40px;
+        background-color:#fff;
+        border-radius:10px;
+        max-width: 100%;  
+        box-shadow: 10px 10px 5px  grey;      
+        &:not([open]) {
+    background-color: #fff;
+        }
 
     } 
     
@@ -130,6 +166,8 @@ const P = styled.p`
   @media only screen and (min-width: 1201px){
         padding: 20px;
         text-align: justify;
+        background-color:#fff;
+        border-radius:10px;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         padding: 20px;
