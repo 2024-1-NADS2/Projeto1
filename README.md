@@ -37,24 +37,25 @@ Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Si
 |-->src<br>
   &emsp;|-->Backend<br>
   &emsp;|-->Banco_de_dados<br>
-  &emsp;|der_banco_de_dados.png<br>
-  &emsp;|der_banco_de_dados.drawio<br>
-  &emsp;|script_banco_de_dados.sql<br>
+    &emsp;|der_banco_de_dados.png<br>
+    &emsp;|der_banco_de_dados.drawio<br>
+    &emsp;|script_banco_de_dados.sql<br>
   &emsp;|-->Servidor_Doamais_Oficial<br>
   &emsp;|-->Frontend<br>
-  &emsp;|-->react<br>
+    &emsp;|-->react<br>
 |readme.md<br>
 
 ## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://nodejs.org/en">Node.js</a>
--<a href="https://nodejs.org/en](https://www.mysql.com/">MySQL Workbench</a>
--<a href="https://code.visualstudio.com/">Visual Studio Code</a>
--<a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a>
+-<p href="https://nodejs.org/en">Node.js</p>
+-<p href="https://nodejs.org/en](https://www.mysql.com/">MySQL Workbench</p>
+-<p href="https://code.visualstudio.com/">Visual Studio Code</p>
+-<p href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</p>
 
 <P>Para executar o projeto abra o local Documentos\GitHub\Projeto1\src\Frontend no Visual Studio Code e execute o comando abaixo:</P>
+
 ```sh
 cd react
 npm start
