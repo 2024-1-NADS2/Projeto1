@@ -28,52 +28,39 @@ Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Si
 |<br>
 |-->documentos<br>
   &emsp;|-->antigos<br>
-  &emsp;|Documentação.docx<br>
-|-->executáveis<br>
-  &emsp;|-->windows<br>
-  &emsp;|-->android<br>
-  &emsp;|-->HTML<br>
+  &emsp;|apresentação.pptx<br>
+  &emsp;|guia_de_estilo.docx<br>
+  &emsp;|Requisitos da disciplina Modelagem de Software e Arquitetura de Sistemas.docx<br>
+  &emsp;|template__projetos_de_extensão.docx<br>
+  &emsp;|template__projetos_de_extensão.pdf<br>
 |-->imagens<br>
 |-->src<br>
   &emsp;|-->Backend<br>
+    &emsp;&emsp;|-->Banco_de_dados<br>
+      &emsp;&emsp;&emsp;|der_banco_de_dados.png<br>
+      &emsp;&emsp;&emsp;|der_banco_de_dados.drawio<br>
+      &emsp;&emsp;&emsp;|script_banco_de_dados.sql<br>
+    &emsp;&emsp;|-->Servidor_Doamais_Oficial<br>
   &emsp;|-->Frontend<br>
+    &emsp;&emsp;|-->react<br>
 |readme.md<br>
-
-## 🛠 Instalação
-
-<b>Android:</b>
-
-Faça o Download do JOGO.apk no seu celular.
-Execute o APK e siga as instruções de seu telefone.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>Windows:</b>
-
-Não há instalação! Apenas executável!
-Encontre o JOGO.exe na pasta executáveis e execute-o como qualquer outro programa.
-
-```sh
-Coloque código do prompt de comnando se for necessário
-```
-
-<b>HTML:</b>
-
-Não há instalação!
-Encontre o index.html na pasta executáveis e execute-o como uma página WEB (através de algum browser).
 
 ## 💻 Configuração para Desenvolvimento
 
 Para abrir este projeto você necessita das seguintes ferramentas:
 
--<a href="https://nodejs.org/en">Node.js</a>
+<p>-<a href="https://nodejs.org/en">Node.js</a></p>
+<p>-<a href="https://nodejs.org/en](https://www.mysql.com/">MySQL Workbench</a></p>
+<p>-<a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
+<p>-<a href="https://visualstudio.microsoft.com/pt-br/vs/">Visual Studio 2022</a></p>
+
+<P>Para executar o projeto abra o local Documentos\GitHub\Projeto1\src\Frontend no Visual Studio Code e execute o comando abaixo:</P>
 
 ```sh
-make install
-npm test
-Coloque código do prompt de comnando se for necessário
+cd react
+npm start
+
+//Em caso de erro verifique se o Node.js encontra-se instalado corretamente em sua máquina
 ```
 
 ## 🗃 Histórico de lançamentos
