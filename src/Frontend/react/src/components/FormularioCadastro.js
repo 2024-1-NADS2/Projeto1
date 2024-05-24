@@ -1,5 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const FormularioContainer= styled.div`
     @media only screen and (min-width: 1201px){
@@ -98,6 +100,7 @@ function FormularioCadastro() {
     const [telefone, setTelefone] = useState('');
     const [tipoPessoa, setTipoPessoa] = useState('');
     const [mensagem, setMensagem] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -111,7 +114,7 @@ function FormularioCadastro() {
         };
 
         try {
-            const response = await fetch('https://localhost:7149/api/Criacao_Usuario', {
+            const response = await fetch('https://doamaisapi.azurewebsites.net/api/Criacao_Usuario', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -122,15 +125,19 @@ function FormularioCadastro() {
             if (!response.ok) {
                 const errorData = await response.json();
                 setMensagem(`Erro: ${errorData.message}`);
+                navigate('/login');
                 return;
             }
+            else{navigate('/login');}
 
             const result = await response.json();
             setMensagem(result);
+            navigate('/login');
         } catch (error) {
             setMensagem(`Erro na comunicação com o servidor: ${error.message}`);
         }
     };
+
 
     return (
         <FormularioContainer>

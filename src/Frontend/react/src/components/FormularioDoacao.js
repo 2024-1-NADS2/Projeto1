@@ -126,7 +126,7 @@ function FormularioCupom() {
 
         try {
             // Enviar cupom
-            const cupomResponse = await fetch('https://localhost:7149/api/Add_Cupom', {
+            const cupomResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Add_Cupom', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -139,7 +139,7 @@ function FormularioCupom() {
             }
 
             // Enviar recebe
-            const recebeResponse = await fetch('https://localhost:7149/api/Recebe/AdicionarRecebe', {
+            const recebeResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Recebe/AdicionarRecebe', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

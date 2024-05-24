@@ -12,6 +12,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddCors(op => {
+    // CORS policy for the React application running locally
+    op.AddPolicy("ApiIntellectify", policyBuilder => {
+        policyBuilder.WithOrigins("http://localhost/")  // Remove trailing slash
+                     .AllowAnyHeader()
+                     .AllowAnyMethod()  // Allow any HTTP method
+                     .AllowCredentials();
+    });
+});
+
 
 var app = builder.Build();
 app.UseSwagger();
@@ -28,6 +38,7 @@ if (app.Environment.IsProduction())
     app.UseSwaggerUI();
 }
 
+app.UseCors("ApiIntellectify");
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React, { useState } from 'react';
-
+import { useNavigate } from 'react-router-dom';
 const FormularioContainer = styled.div`
     @media only screen and (min-width: 1201px){
         padding: 20px;
@@ -96,32 +96,41 @@ function FormularioRecuperarSenha() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [mensagem, setMensagem] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const dados = { email, senha };
+        const dados = {
+            email,
+            senha
+        };
 
         try {
-            const response = await fetch('https://localhost:7149/api/Recuperar_Senha', {
+            const response = await fetch('https://doamaisapi.azurewebsites.net/api/Recuperar_Senha', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(dados)
+                body: JSON.stringify(dados),
             });
 
-            const result = await response.json();
-            if (response.ok) {
-                setMensagem('Senha redefinida com sucesso.');
-            } else {
-                setMensagem(result || 'Erro ao redefinir a senha.');
+            if (!response.ok) {
+                const errorData = await response.text();
+                setMensagem(`Erro: ${errorData}`);
+                navigate('/login');
+                return;
             }
+            
+
+            const result = await response.text();
+            setMensagem(result);
+            navigate('/login');
         } catch (error) {
-            console.error('Erro:', error);
-            setMensagem('Ocorreu um erro ao redefinir a senha.');
+            setMensagem(`Erro na comunicação com o servidor: ${error.message}`);
         }
     };
+
 
     return (
         <FormularioContainer>

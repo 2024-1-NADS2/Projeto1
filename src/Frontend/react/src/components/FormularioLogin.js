@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from "styled-components";
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const FormularioContainer= styled.div`
     @media only screen and (min-width: 1201px){
@@ -130,6 +130,7 @@ function FormularioLogin() {
     const [email, setEmail] = useState('');
     const [senha, setSenha] = useState('');
     const [message, setMessage] = useState('');
+    const navigate = useNavigate();
 
     const handleSubmit = async (event) => {
         event.preventDefault();
@@ -140,7 +141,7 @@ function FormularioLogin() {
         };
 
         try {
-            const response = await fetch('https://localhost:7149/api/Login', {
+            const response = await fetch('https://doamaisapi.azurewebsites.net/api/Login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -151,6 +152,7 @@ function FormularioLogin() {
             if (response.ok) {
                 const data = await response.text();
                 setMessage(data);
+                navigate("/doacao");
             } else {
                 if (response.status === 401) {
                     setMessage('Senha incorreta.');
@@ -168,7 +170,7 @@ function FormularioLogin() {
     return (
         <FormularioContainer>
             <Texto>
-                <a>Entrar / Criar conta</a>
+                <a>Fazer login</a>
             </Texto>
             <form onSubmit={handleSubmit}>
                 <div className="mb-3">
