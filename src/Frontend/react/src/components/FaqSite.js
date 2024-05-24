@@ -49,18 +49,26 @@ const Sumary = styled.summary`
     @media (max-width: 1200px) and (min-width: 1025px){
         font-weight: bold;
         padding: 20px;
+        list-style-type: '+ ';
+
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         font-weight: bold;
         padding: 20px;  
+        list-style-type: '+ ';
+
       } 
     @media (max-width: 768px) and (min-width: 481px){
         font-weight: bold;
-        padding: 20px;   
+        padding: 20px;  
+        list-style-type: '+ ';
+ 
      } 
     @media (max-width: 480px) and (min-width: 320px){
         font-weight: bold;
         padding: 20px;
+        list-style-type: '+ ';
+
 } 
 `
 const FaqH4 = styled.h4`
@@ -116,7 +124,7 @@ const Details = styled.details`
         margin-top: 40px;
         background-color:#fff;
         border-radius:10px;
-        max-width: 50%;  
+        max-width: 100%;  
         box-shadow: 10px 10px 5px  grey;      
         &:not([open]) {
     background-color: #fff;
@@ -129,7 +137,7 @@ const Details = styled.details`
         margin-top: 40px;
         background-color:#fff;
         border-radius:10px;
-        max-width: 60%;  
+        max-width: 100%;  
         box-shadow: 10px 10px 5px  grey;      
         &:not([open]) {
     background-color: #fff;
@@ -142,7 +150,7 @@ const Details = styled.details`
         margin-top: 40px;
         background-color:#fff;
         border-radius:10px;
-        max-width: 70%;  
+        max-width: 100%;  
         box-shadow: 10px 10px 5px  grey;      
         &:not([open]) {
     background-color: #fff;
