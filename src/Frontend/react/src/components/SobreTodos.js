@@ -69,7 +69,7 @@ const Texto = styled.p`
 
 @media (max-width: 480px) and (min-width: 320px){
     text-align: justify;  
-    padding: 20px;
+    padding: 0px;
     column-count: 0;
 }       
 `
