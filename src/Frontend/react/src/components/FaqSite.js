@@ -204,25 +204,34 @@ function Faq(){
 
 
             <Details>
-             <Sumary>Como posso doar para uma Ong parceira?</Sumary>   
-               <P>Acesse o nosso site.<br></br>
-Clique na opção "DOE AGORA".<br></br>
-Clique em "Ainda não sou doador".<br></br>
-Preencha o formulário com seus dados pessoais.<br></br>
-Envie o formulário para completar seu cadastro.<br></br>
-Após ter concluído o cadastro Faça o login no site usando suas credenciais.<br></br>
-Escolha a ONG para a qual deseja fazer a doação.<br></br>
-Encaminhe uma foto ou um escaneamento do seu cupom fiscal.<br></br>
-Clique no botão "ENVIAR" para finalizar a doação.</P>
- 
-            </Details>
-            <Details>
-            <Sumary>Como posso adicionar minha nota fiscal?</Sumary>
-                <P>Utilize um scanner para digitalizar a nota fiscal ou a câmera do seu smartphone para tirar uma foto clara e legível da nota fiscal.<br></br>
-                Acesse o nosso site e faça login com suas credenciais.<br></br>
-Navegue até a seção de doações ou a área específica para enviar a nota fiscal.<br></br>
-Clique no botão "Escolher arquivo" ou "Selecionar arquivo".<br></br>
-Encontre e selecione a foto ou o arquivo escaneado da sua nota fiscal no seu dispositivo.</P>
+             <Sumary>Como posso doar para uma ONG parceira?</Sumary>   
+                <P>
+                    Doar para uma ONG parceira é uma maneira simples e eficaz de contribuir para causas importantes e transformar a realidade de quem mais precisa.
+                    <br></br>
+                    <br></br><strong>Siga estes passos para realizar sua doação:</strong>
+                    <br></br>
+                    <br></br><strong>1. Acesse a plataforma de doações:</strong>
+                    <br></br>
+                    <br></br>•	Clique no botão "DOE AGORA" presente no topo do site.
+                    <br></br>
+                    <br></br><strong>2. Faça login ou cadastre-se:</strong>
+                    <br></br> 
+                    <br></br>•	Já possui cadastro? Utilize seu e-mail e senha para fazer login.
+                    <br></br>•	Ainda não é doador? Clique em "Ainda não sou doador" e preencha o formulário de cadastro com seus dados pessoais.
+                    <br></br>•	Após concluir o cadastro, faça login para prosseguir com a doação.
+                    <br></br>
+                    <br></br><strong>3. Selecione a ONG e defina o valor da doação:</strong>
+                    <br></br>
+                    <br></br>•	Na página de doação, escolha a ONG que deseja beneficiar com sua contribuição.
+                    <br></br>•	Informe o e-mail cadastrado.
+                    <br></br>•	Informe o valor do cupom que você deseja doar.
+                    <br></br>•	Anexe uma foto do cupom fiscal.
+                    <br></br>•	Revise os dados informados e clique no botão "CONFIRMAR" para finalizar a doação.
+                    <br></br>
+                    <br></br><strong>Sua doação está feita!</strong>
+                    <br></br>
+                    <br></br>Para doar diretamente a uma ONG basta contactala por um dos canais divulgado em nosso site.
+                </P>
             </Details>
 
             <Details>
@@ -233,33 +242,19 @@ O CPF pode estar no topo, no meio ou no final do cupom, dependendo do layout do 
             </Details>
 
             <Details>
-                <Sumary>Qual valor a ong ganha com cada nota?</Sumary>
-                <P>Créditos por Nota: O valor creditado por cada nota fiscal doada depende do valor da compra e do imposto recolhido (ICMS).<br></br> Em geral, o ICMS representa cerca de 7% a 18% do valor da compra, dependendo do produto.<br></br>
-Por exemplo, se uma nota fiscal registra uma compra de R$ 100, e o ICMS aplicável é 12%, o imposto recolhido seria R$ 12.<br></br>
+                <Sumary>Qual valor a ONG ganha com cada nota recebida?</Sumary>
+                <P>O valor creditado por cada nota fiscal doada depende do valor da compra e do imposto (ICMS) recolhido pelo vendedor.<br></br> Em geral, o ICMS representa cerca de 7% a 18% do valor da compra, dependendo do produto.<br></br>
+Por exemplo, se uma nota fiscal registra uma compra de R$ 100,00, e o ICMS aplicável é 12%, o imposto recolhido seria R$ 12,00.<br></br>
 A porcentagem desse ICMS que é repassada para a ONG varia, mas geralmente está entre 5% a 30% do valor do ICMS.<br></br>
 Portanto, se a porcentagem de repasse for 20%, a ONG receberia R$ 2,40 por essa nota fiscal específica.</P>
 
             </Details>
 
             <Details>
-                <Sumary>Como se tornar uma ONG parceira?</Sumary>
-                <P>Reúna as seguintes informações e documentos:<br></br>
-                    Razão Social <br></br>
-                    CNPJ <br></br>
-                    Telefone para contato<br></br>
-                    E-mail para contato<br></br>
-                    Estatuto Social da ONG (documento oficial)<br></br>
-                    Abra seu email.<br></br>
-                Crie uma nova mensagem de e-mail.<br></br> 
-                No campo "Para", insira o endereço de e-mail de nossa equipe - <Span>contato.doamais@hotmail.com</Span><br></br>
-                No corpo do e-mail, inclua as seguintes informações:<br></br>
-                Razão Social da ONG<br></br>
-                CNPJ da ONG<br></br>
-                Telefone para contato<br></br>
-                E-mail para contato<br></br>
-                Clique no ícone de anexar arquivo (geralmente representado por um clipe de papel).<br></br>
-                Selecione o arquivo do Estatuto Social da ONG do seu computador e anexe-o ao e-mail.<br></br>
-                Nossa equipe revisará sua solicitação e entrará em contato através do e-mail fornecido para confirmar a parceria ou solicitar informações adicionais, se necessário.</P>
+                <Sumary>Como se tornar uma ONG parceira da DoaMais?</Sumary>
+                <P>
+                    
+                </P>
             </Details>
 
             <Details>
