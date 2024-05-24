@@ -226,7 +226,7 @@ function Faq(){
                     <br></br>•	Informe o e-mail cadastrado.
                     <br></br>•	Informe o valor do cupom que você deseja doar.
                     <br></br>•	Anexe uma foto do cupom fiscal.
-                    <br></br>•	Revise os dados informados e clique no botão "CONFIRMAR" para finalizar a doação.
+                    <br></br>•	Revise os dados informados e clique no botão "Enviar" para finalizar a doação.
                     <br></br>
                     <br></br><strong>Sua doação está feita!</strong>
                     <br></br>
@@ -253,7 +253,32 @@ Portanto, se a porcentagem de repasse for 20%, a ONG receberia R$ 2,40 por essa 
             <Details>
                 <Sumary>Como se tornar uma ONG parceira da DoaMais?</Sumary>
                 <P>
-                    
+                    Para se tornar uma ONG parceira da DoaMais siga estes passos:
+                    <br></br>
+                    <br></br><strong>1. Reúna as informações e documentos necessários:</strong>
+                    <br></br>
+                    <br></br>•	Razão Social: Nome completo da sua organização, conforme consta em seu registro oficial.
+                    <br></br>•	CNPJ: Número do Cadastro Nacional de Pessoas Jurídicas da sua ONG.
+                    <br></br>•	Telefone para contato: Número de telefone com DDD e código de área para que possamos entrar em contato com você.
+                    <br></br>•	E-mail para contato: Endereço de e-mail oficial da sua ONG, utilizado para comunicação regular.
+                    <br></br>•	Estatuto Social da ONG (documento oficial): Cópia digitalizada do estatuto social da sua organização, em formato PDF. Este documento comprova a sua missão, valores e objetivos.
+                    <br></br>
+                    <br></br><strong>2. Envie um e-mail para nossa equipe:</strong>
+                    <br></br>
+                    <br></br>•	Envie um e-mail para contato.doamais@hotmail.com com o assunto “Cadastro ONG Parceira” anexando a documentação solicitada.
+                    <br></br>
+                    <br></br><strong>3. Aguarde nosso retorno:</strong>
+                    <br></br>
+                    <br></br> •	Analisaremos sua solicitação e entraremos em contato com você o mais breve possível.
+                    <br></br> •	Caso sua ONG atenda aos critérios de parceria da DoaMais, enviaremos um e-mail com as próximas etapas do processo.
+                    <br></br>
+                    <br></br><strong>Lembre-se:</strong>
+                    <br></br>
+                    <br></br>•	Somente serão aceitas solicitações de ONGs sem fins lucrativos, devidamente registradas e em situação regular junto aos órgãos competentes.
+                    <br></br>•	A DoaMais se reserva o direito de avaliar cada solicitação e selecionar as ONGs que se alinham à nossa missão e valores.
+                    <br></br>
+                    <br></br>Agradecemos seu interesse em se tornar uma ONG parceira da DoaMais!
+                    <br></br>Juntos, podemos fazer a diferença.
                 </P>
             </Details>
 
