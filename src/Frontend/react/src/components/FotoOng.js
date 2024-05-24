@@ -20,11 +20,13 @@ const Doacao = styled.img`
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         border-radius: 10px;
-        width: 280px;
-        height: 150px;
-        margin-top: -350px;
-        margin-left: 700px; 
-        margin-right:0px;
+        width: 500px;
+        height: 250px;
+        margin: 20px auto;
+        text-align:center;
+        align-items: center;
+        display: block
+
 
         
     } 
@@ -32,8 +34,12 @@ const Doacao = styled.img`
         border-radius: 10px;
         width: 430px;
         height: 220px;
-        display: block;
-        margin:20px auto;
+        display: flex;
+        margin: 20px auto;
+        align-items: center;
+        text-align:center;
+        
+
         
      } 
     @media (max-width: 768px) and (min-width: 481px){
@@ -66,14 +72,13 @@ const Pe = styled.p`
         font-family:Arial, Helvetica, sans-serif;
         column-count: 2;
         margin:30px;
-        padding: 10px;
+        padding: 20px;
         text-align: justify;
-        margin-right: 500px;
         margin-top: -20px;
         margin-left: 20px
     } 
     @media (max-width: 1024px) and (min-width: 769px){
-        width: 90%;
+        width:90%;
         font-family:Arial, Helvetica, sans-serif;
         column-count: 1;
         padding: 20px;
@@ -100,14 +105,13 @@ const H3 = styled.h3`
     text-align: center;
     margin-left: 50px;
     font-weight: bold;
-    margin-top: 100px;
+    margin-top: 50px;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
         width:100%;
-        text-align:left;
+        text-align:center;
         font-weight:bold;
-        margin-left: 50px;
-        margin-top: 100px;
+        margin-top:50px
     } 
     @media (max-width: 1024px) and (min-width: 769px){
         width:100%;
@@ -131,20 +135,17 @@ const H3 = styled.h3`
 const H1 = styled.h1`
       @media only screen and (min-width: 1201px){
         text-align: center;
+        margin-top: 20px;
         font-weight: bold;
-        margin:20px 40px 0 40px ;
-        margin-top: 35px;
-        padding:20px;
+        margin-left: 40px;
        }
     @media (max-width: 1200px) and (min-width: 1025px){
-        width: 100%;
         text-align: center;
         margin-top: 20px;
         font-weight: bold;
         margin-left: 40px;
     } 
     @media (max-width: 1024px) and (min-width: 769px){
-        width: 100%;
         text-align: center;
         margin-top: 20px;
         font-weight: bold;
@@ -165,15 +166,17 @@ const H1 = styled.h1`
     `
 const AtividadesH3 = styled.h3`
 @media only screen and (min-width: 1201px){
-    font-weight: bold;
-    margin-left: 40px;
-    margin-top: 20px;
-    text-align: center;
+        width:100%;
+        text-align:center;
+        font-weight:bold;
+        margin-top:50px;
     }
     @media (max-width: 1200px) and (min-width: 1025px){
-        font-weight: bold;
-        margin-left: 40px;
-        margin-top: 20px;    } 
+        width:100%;
+        text-align:center;
+        font-weight:bold;
+        margin-top:15px;  
+     } 
     @media (max-width: 1024px) and (min-width: 769px){
         width:100%;
         text-align:center;
@@ -210,7 +213,7 @@ function ImagensOng() {
             <H1>
             Associação Mulheres Unidas Venceremos
             </H1>              
-                <H3>História da Ong</H3>
+                <AtividadesH3>História da Ong</AtividadesH3>
                 <hr />
                 <Pe>
                     A Associação de Mulheres Unidas Venceremos (AMUV) é uma organização não governamental sediada na Rua Major Diogo, número 285, no bairro Bela Vista, em São Paulo.

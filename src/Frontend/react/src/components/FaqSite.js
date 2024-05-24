@@ -43,6 +43,8 @@ const Sumary = styled.summary`
   @media only screen and (min-width: 1201px){
     font-weight: bold;
     padding: 20px;    
+    list-style-type: '+ ';
+
 }
     @media (max-width: 1200px) and (min-width: 1025px){
         font-weight: bold;
@@ -101,7 +103,7 @@ const Details = styled.details`
         margin-top: 40px;
         background-color:#fff;
         border-radius:10px;
-        max-width: 50%;  
+        max-width: 100%;  
         box-shadow: 10px 10px 5px  grey;      
         &:not([open]) {
     background-color: #fff;

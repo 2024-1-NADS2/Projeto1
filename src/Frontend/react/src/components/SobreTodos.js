@@ -39,43 +39,50 @@ const Container = styled.div`
 `
 
 const Titulo = styled.h1`
+padding:20px;
 `
 
 const Texto = styled.p`
- @media only screen and (min-width: 1225px){
+ @media only screen and (min-width: 1201px){
     text-align: justify;  
-    padding: 20px 20px 20px 0px;
+    padding: 20px;
     column-count:0 ;
-    flex-direction: column;
+    width:100%;
 }
+@media (max-width: 1200px) and (min-width: 1025px){
+    text-align: justify;  
+    padding: 20px;
+    column-count: 0;
+    } 
 
 @media (max-width: 1024px) and (min-width: 769px){
     text-align: justify;  
-    padding: 20px 20px 20px 0px;
+    padding: 20px;
     column-count: 0;
 }
 
 @media (max-width: 768px) and (min-width: 481px){
     text-align: justify;  
-    padding: 20px 20px 20px 0px;
+    padding: 20px;
     column-count: 0;
 }
 
 @media (max-width: 480px) and (min-width: 320px){
     text-align: justify;  
-    padding: 20px 20px 20px 0px;
+    padding: 20px;
     column-count: 0;
 }       
 `
 
 const Fotos = styled.div`
-@media only screen and (min-width: 1225px){
+@media only screen and (min-width: 1201px){
     width: 350px;
     padding: 0px;
-    display: flex;
-    margin-left: 0px;
-    padding-right: 450px;
-   
+    margin-right: 0px;
+    display:flex;
+    align-items: center;
+    text-align:center
+    
 }
 
 @media (max-width: 1024px) and (min-width: 769px){
