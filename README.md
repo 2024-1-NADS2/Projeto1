@@ -19,7 +19,10 @@
 </p>
 
 
-Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário - Fundação Escola de Comércio Álvares Penteado (FECAP), tendo como objetivo ajudar de forma rápida e segura a criar ou ampliar o hábito de ajudar o próximo, por meio de causas, projetos e ONG’s, que por sua vez, já fazem um trabalho de acolhimento a pessoas, animais e demais necessidades.
+<p>Este site foi criado por estudantes do curso de Análise e Desenvolvimento de Sistemas do Centro Universitário - Fundação Escola de Comércio Álvares Penteado (FECAP), tendo como objetivo ajudar de forma rápida e segura a criar ou ampliar o hábito de ajudar o próximo, por meio de causas, projetos e ONG’s, que por sua vez, já fazem um trabalho de acolhimento a pessoas, animais e demais necessidades.</p>
+<br></br>
+<p>Link do Figma: https://www.figma.com/design/x1PWvOffpN3Rvv6BHJ5oqM/Projeto?node-id=0-1&t=8DNhUr8b9hXlsu5b-0</p>
+<p>Link do site: https://doamais.netlify.app/</p>
 
 
 ## 🛠 Estrutura de pastas
