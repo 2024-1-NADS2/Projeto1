@@ -124,17 +124,17 @@ function FormularioCadastro() {
 
             if (!response.ok) {
                 const errorData = await response.json();
-                setMensagem(`Erro: ${errorData.message}`);
+                alert(`${errorData.message}`);
                 navigate('/login');
                 return;
             }
             else{navigate('/login');}
 
             const result = await response.json();
-            setMensagem(result);
+            alert(result);
             navigate('/login');
         } catch (error) {
-            setMensagem(`Erro na comunicação com o servidor: ${error.message}`);
+            alert(`Erro na comunicação com o servidor: ${error.message}`);
         }
     };
 
