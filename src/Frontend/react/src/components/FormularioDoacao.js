@@ -118,48 +118,102 @@ function FormularioCupom() {
             email: email
         };
 
-        const recebe = {
-            documento: arquivo ? arquivo.name : 'Documento de Exemplo',
-            email: email,
-            nome_ong: ongBeneficiada
-        };
-
         try {
-            // Enviar cupom
-            const cupomResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Add_Cupom', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(cupom)
-            });
+            // Converter arquivo para Base64
+            let documentoBase64 = 'Documento de Exemplo';
+            if (arquivo) {
+                const reader = new FileReader();
+                reader.readAsDataURL(arquivo);
+                reader.onloadend = async () => {
+                    documentoBase64 = reader.result;
 
-            if (!cupomResponse.ok) {
-                throw new Error('Erro ao adicionar cupom: ' + cupomResponse.statusText);
+                    const recebe = {
+                        documento: documentoBase64,
+                        email: email,
+                        nome_ong: ongBeneficiada
+                    };
+
+                    try {
+                        // Enviar cupom
+                        const cupomResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Add_Cupom', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(cupom)
+                        });
+
+                        if (!cupomResponse.ok) {
+                            throw new Error('Erro ao adicionar cupom: ' + cupomResponse.statusText);
+                        }
+
+                        // Enviar recebe
+                        const recebeResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Recebe/AdicionarRecebe', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(recebe)
+                        });
+
+                        if (!recebeResponse.ok) {
+                            throw new Error('Erro ao adicionar recebe: ' + recebeResponse.statusText);
+                        }
+
+                        alert('Cupom e Recebe adicionados com sucesso!');
+                    } catch (error) {
+                        console.error('Erro:', error);
+                        alert('Ocorreu um erro ao adicionar os dados: ' + error.message);
+                    } finally {
+                        setLoading(false);
+                    }
+                };
+                reader.onerror = () => {
+                    console.error('Erro ao ler o arquivo.');
+                    setLoading(false);
+                };
+            } else {
+                const recebe = {
+                    documento: documentoBase64,
+                    email: email,
+                    nome_ong: ongBeneficiada
+                };
+
+                // Enviar cupom
+                const cupomResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Add_Cupom', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(cupom)
+                });
+
+                if (!cupomResponse.ok) {
+                    throw new Error('Erro ao adicionar cupom: ' + cupomResponse.statusText);
+                }
+
+                // Enviar recebe
+                const recebeResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Recebe/AdicionarRecebe', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(recebe)
+                });
+
+                if (!recebeResponse.ok) {
+                    throw new Error('Erro ao adicionar recebe: ' + recebeResponse.statusText);
+                }
+
+                alert('Cupom e adicionado com sucesso!');
+                setLoading(false);
             }
-
-            // Enviar recebe
-            const recebeResponse = await fetch('https://doamaisapi.azurewebsites.net/api/Recebe/AdicionarRecebe', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(recebe)
-            });
-
-            if (!recebeResponse.ok) {
-                throw new Error('Erro ao adicionar recebe: ' + recebeResponse.statusText);
-            }
-
-            alert('Cupom e Recebe adicionados com sucesso!');
         } catch (error) {
             console.error('Erro:', error);
             alert('Ocorreu um erro ao adicionar os dados: ' + error.message);
-        } finally {
             setLoading(false);
         }
     };
-
     return (
         <FormularioContainer>
             <Texto>
