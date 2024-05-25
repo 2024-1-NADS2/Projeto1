@@ -99,7 +99,7 @@ namespace ServidorExemplo.Controllers
             }
 
             // Verificar se a senha contém letras maiúsculas, minúsculas, números e caracteres especiais
-            if (!password.Any(char.IsUpper) || !password.Any(char.IsLower) || !password.Any(char.IsDigit) || !password.Any(char.IsSymbol))
+            if (!password.Any(char.IsUpper) || !password.Any(char.IsLower) || !password.Any(char.IsDigit))
             {
                 return false;
             }

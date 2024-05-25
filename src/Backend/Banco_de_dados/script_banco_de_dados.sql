@@ -35,7 +35,7 @@ CREATE TABLE ongs (
 
 CREATE TABLE recebe (
     id_documento INT PRIMARY KEY AUTO_INCREMENT,
-    documento VARCHAR(500) NOT NULL,
+    documento MEDIUMTEXT NOT NULL,
     email VARCHAR(100) NOT NULL,
     nome_ong VARCHAR(100) NOT NULL,
     CONSTRAINT Fkid_doador FOREIGN KEY (email) REFERENCES usuarios(email),
