@@ -124,8 +124,8 @@ function FormularioCadastro() {
 
             if (!response.ok) {
                 const errorData = await response.json();
-                alert(`Usuário criado com sucesso`);
-                navigate('/login');
+                alert(`E-mail já cadastrado na nossa base de dados`);
+                
                 return;
             }
             else{
