@@ -155,15 +155,15 @@ function FormularioLogin() {
                 navigate("/doacao");
             } else {
                 if (response.status === 401) {
-                    setMessage('Senha incorreta.');
+                    alert('Senha incorreta.');
                 } else if (response.status === 404) {
-                    setMessage('Usuário não encontrado.');
+                    alert('Usuário não encontrado.');
                 } else {
-                    setMessage('Erro no servidor.');
+                    alert('Erro no servidor.');
                 }
             }
         } catch (error) {
-            setMessage('Erro ao conectar com o servidor.');
+            alert('Erro ao conectar com o servidor.');
         }
     };
 

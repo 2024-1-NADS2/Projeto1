@@ -117,17 +117,17 @@ function FormularioRecuperarSenha() {
 
             if (!response.ok) {
                 const errorData = await response.text();
-                setMensagem(`Erro: ${errorData}`);
+                alert(`Erro: ${errorData}`);
                 navigate('/login');
                 return;
             }
             
 
             const result = await response.text();
-            setMensagem(result);
+            alert(result);
             navigate('/login');
         } catch (error) {
-            setMensagem(`Erro na comunicação com o servidor: ${error.message}`);
+            alert(`Erro na comunicação com o servidor: ${error.message}`);
         }
     };
 

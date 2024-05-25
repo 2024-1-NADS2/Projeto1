@@ -160,7 +160,7 @@ function FormularioCupom() {
                             throw new Error('Erro ao adicionar recebe: ' + recebeResponse.statusText);
                         }
 
-                        alert('Cupom e Recebe adicionados com sucesso!');
+                        alert('Cupom enviado com sucesso!');
                     } catch (error) {
                         console.error('Erro:', error);
                         alert('Ocorreu um erro ao adicionar os dados: ' + error.message);
