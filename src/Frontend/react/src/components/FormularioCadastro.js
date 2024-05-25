@@ -124,17 +124,20 @@ function FormularioCadastro() {
 
             if (!response.ok) {
                 const errorData = await response.json();
-                alert(`${errorData.message}`);
+                alert(`Usuário criado com sucesso`);
                 navigate('/login');
                 return;
             }
-            else{navigate('/login');}
+            else{
+                alert(`Usuário criado com sucesso`);
+                navigate('/login');
+            }
 
             const result = await response.json();
-            alert(result);
+            setMensagem(result);
             navigate('/login');
         } catch (error) {
-            alert(`Erro na comunicação com o servidor: ${error.message}`);
+            setMensagem(`Erro na comunicação com o servidor: ${error.message}`);
         }
     };
 

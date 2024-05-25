@@ -117,8 +117,7 @@ function FormularioRecuperarSenha() {
 
             if (!response.ok) {
                 const errorData = await response.text();
-                alert(`${errorData}`);
-                navigate('/login');
+                alert(`${errorData}`);               
                 return;
             }
             
