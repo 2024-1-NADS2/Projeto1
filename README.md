@@ -31,7 +31,6 @@
 |<br>
 |-->documentos<br>
   &emsp;|-->antigos<br>
-  &emsp;|apresentação.pptx<br>
   &emsp;|guia_de_estilo.docx<br>
   &emsp;|Requisitos da disciplina Modelagem de Software e Arquitetura de Sistemas.docx<br>
   &emsp;|template__projetos_de_extensão.docx<br>
